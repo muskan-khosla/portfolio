@@ -1,4 +1,283 @@
-*, html {
-    padding: 0;
-    margin: 0;
+/* =========================================
+   HEADER
+========================================= */
+
+.site-header {
+    width: 100%;
+    background: #030a12;
+    position: relative;
+    z-index: 100;
+}
+
+.header-container {
+    width: min(1240px, calc(100% - 48px));
+    height: 100px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* =========================================
+   BRAND
+========================================= */
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.brand-logo {
+    width: 53px;
+    height: 32px;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+    background: #030a12;
+}
+
+/* Stylized MK logo */
+
+.brand-logo::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.logo-m,
+.logo-k {
+    position: absolute;
+
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 1;
+
+    -webkit-text-stroke: 1px #742cff;
+}
+
+.logo-m {
+    left: 2px;
+    color: #e82cff;
+    transform: skewY(-8deg);
+}
+
+.logo-k {
+    left: 20px;
+    color: #18dce5;
+    transform: skewY(8deg);
+}
+
+.brand-name {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 53px;
+    margin-left: auto;
+    margin-right: 175px;
+}
+
+.nav-link {
+    position: relative;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
+    transition:
+        color 0.25s ease,
+        opacity 0.25s ease;
+}
+
+.nav-link:hover {
+    color: #a967ff;
+}
+
+.nav-link::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+
+    width: 0;
+    height: 2px;
+
+    background: linear-gradient(
+        90deg,
+        #c34de8,
+        #586df6
+    );
+
+    border-radius: 10px;
+
+    transition: width 0.25s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+
+/* =========================================
+   HEADER CTA
+========================================= */
+
+.header-cta {
+    min-width: 214px;
+    height: 51px;
+
+    padding: 0 22px 0 25px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+
+    color: #ffffff;
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    background: linear-gradient(
+        100deg,
+        #c052df 0%,
+        #4f70f4 100%
+    );
+
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.header-cta:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 30px rgba(99, 76, 240, 0.25);
+}
+
+.cta-arrow {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+
+    transition: transform 0.25s ease;
+}
+
+.header-cta:hover .cta-arrow {
+    transform: translateX(4px);
+}
+
+
+/* =========================================
+   MOBILE MENU BUTTON
+========================================= */
+
+.menu-toggle {
+    display: none;
+
+    width: 44px;
+    height: 44px;
+
+    padding: 9px;
+
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+
+    width: 25px;
+    height: 2px;
+
+    margin: 5px auto;
+
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1100px) {
+
+    .main-nav {
+        gap: 30px;
+        margin-right: 60px;
+    }
+
+    .header-cta {
+        min-width: 190px;
+    }
+}
+
+
+@media (max-width: 900px) {
+
+    .header-container {
+        height: 85px;
+    }
+
+    .main-nav,
+    .header-cta {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .header-container {
+        width: calc(100% - 32px);
+        height: 75px;
+    }
+
+    .brand-name {
+        font-size: 12px;
+    }
+
+    .brand-logo {
+        width: 48px;
+        height: 30px;
+    }
 }
