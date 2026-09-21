@@ -1,0 +1,49 @@
+:root {
+  /* Background colors */
+  --color-bg: #030A12;
+  --color-bg-secondary: #07101D;
+  --color-card: #0B1625;
+  --color-border: #17283D;
+
+  /* Brand colors */
+  --color-magenta: #D946EF;
+  --color-purple: #8B5CF6;
+  --color-blue: #3B82F6;
+  --color-cyan: #06B6D4;
+  --color-bright-cyan: #22D3EE;
+
+  /* Typography */
+  --color-text-primary: #F8FAFC;
+  --color-text-secondary: #CBD5E1;
+  --color-text-muted: #94A3B8;
+
+  /* Gradients */
+  --gradient-brand: linear-gradient(
+    90deg,
+    #D946EF 0%,
+    #8B5CF6 45%,
+    #3B82F6 100%
+  );
+
+  --gradient-heading: linear-gradient(
+    90deg,
+    #D946EF 0%,
+    #8B5CF6 40%,
+    #06B6D4 100%
+  );
+
+  --gradient-button: linear-gradient(
+    110deg,
+    #D946EF 0%,
+    #A855F7 45%,
+    #6366F1 100%
+  );
+
+  --gradient-cta: linear-gradient(
+    100deg,
+    #7C3AED 0%,
+    #2563EB 45%,
+    #06B6D4 75%,
+    #2DD4BF 100%
+  );
+}
