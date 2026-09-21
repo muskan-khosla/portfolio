@@ -42,4 +42,100 @@
   /* ===== Layout ===== */
   --radius-card: 16px;
   --radius-button: 999px;
+
+  /* ========================================
+     FONT FAMILIES
+     ======================================== */
+
+  /* Main font — clean, modern, professional */
+  --font-primary: 'Poppins', sans-serif;
+
+  /* Elegant headings — About page */
+  --font-display: 'Playfair Display', serif;
+
+  /* Handwritten decorative text */
+  --font-script: 'Caveat', cursive;
+
+
+  /* ========================================
+     FONT WEIGHTS
+     ======================================== */
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+
+  /* ========================================
+     RESPONSIVE FONT SIZES
+     ======================================== */
+
+  /* Hero heading */
+  --font-size-h1: clamp(2.125rem, 4vw, 3.5rem);
+  /* 34px → 56px */
+
+  /* Section heading */
+  --font-size-h2: clamp(1.75rem, 3vw, 2.5rem);
+  /* 28px → 40px */
+
+  /* Card heading */
+  --font-size-h3: clamp(1.125rem, 1.5vw, 1.25rem);
+  /* 18px → 20px */
+
+  /* Small heading */
+  --font-size-h4: clamp(1rem, 1.3vw, 1.125rem);
+  /* 16px → 18px */
+
+  /* Large intro text */
+  --font-size-lead: clamp(1rem, 1.5vw, 1.125rem);
+  /* 16px → 18px */
+
+  /* Standard body text */
+  --font-size-body: clamp(0.9375rem, 1.1vw, 1rem);
+  /* 15px → 16px */
+
+  /* Navigation links */
+  --font-size-nav: 0.875rem;
+  /* 14px */
+
+  /* Button text */
+  --font-size-button: 0.875rem;
+  /* 14px */
+
+  /* Small labels and badges */
+  --font-size-small: 0.75rem;
+  /* 12px */
+
+  /* Footer text */
+  --font-size-footer: 0.8125rem;
+  /* 13px */
+
+
+  /* ========================================
+     DISPLAY FONT SIZES
+     ======================================== */
+
+  /* About page main heading */
+  --font-size-display: clamp(2.25rem, 4vw, 3.5rem);
+  /* 36px → 56px */
+
+  /* About page story heading */
+  --font-size-story: clamp(1.875rem, 3vw, 2.5rem);
+  /* 30px → 40px */
+
+  /* Handwritten notes */
+  --font-size-script: clamp(1.375rem, 2vw, 1.75rem);
+  /* 22px → 28px */
+
+
+  /* ========================================
+     LINE HEIGHTS
+     ======================================== */
+
+  --line-height-tight: 1.15;
+  --line-height-heading: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-body: 1.7;
+  --line-height-relaxed: 1.8;
 }
