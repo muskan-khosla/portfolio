@@ -1,17 +1,53 @@
-/* =========================================
-   HEADER
-========================================= */
-
-.site-header {
-    width: 100%;
-    background: #030a12;
-    position: relative;
-    z-index: 100;
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
 }
 
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 82px;
+
+    background: rgba(3, 10, 18, 0.82);
+    border-bottom: 1px solid rgba(23, 40, 61, 0.75);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    z-index: 1000;
+
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Header after scrolling */
+
+.site-header.scrolled {
+    background: rgba(3, 10, 18, 0.94);
+
+    border-bottom-color: rgba(139, 92, 246, 0.18);
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.22);
+}
+
+
+/* =========================================================
+   HEADER CONTAINER
+========================================================= */
+
 .header-container {
-    width: min(1240px, calc(100% - 48px));
-    height: 100px;
+    width: min(1200px, calc(100% - 48px));
+    height: 100%;
     margin: 0 auto;
 
     display: flex;
@@ -20,125 +56,170 @@
 }
 
 
-/* =========================================
+/* =========================================================
    BRAND
-========================================= */
+========================================================= */
 
 .brand {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
+    gap: 11px;
 
+    color: #f8fafc;
     text-decoration: none;
-    color: #ffffff;
+
+    flex-shrink: 0;
 }
+
+
+/* MK Logo */
 
 .brand-logo {
-    width: 53px;
-    height: 32px;
-
     position: relative;
-    display: flex;
+
+    display: inline-flex;
     align-items: center;
+    justify-content: center;
 
-    overflow: hidden;
-    background: #030a12;
+    width: 40px;
+    height: 40px;
+
+    border-radius: 11px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #d946ef 0%,
+            #8b5cf6 45%,
+            #3b82f6 75%,
+            #06b6d4 100%
+        );
+
+    color: #ffffff;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+
+    box-shadow:
+        0 0 25px rgba(139, 92, 246, 0.20);
 }
 
-/* Stylized MK logo */
 
-.brand-logo::before {
+/* Small inner highlight */
+
+.brand-logo::after {
     content: "";
+
     position: absolute;
-    inset: 0;
+    inset: 1px;
 
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    pointer-events: none;
 }
 
-.logo-m,
-.logo-k {
-    position: absolute;
 
-    font-family: Arial, sans-serif;
-    font-size: 28px;
-    font-weight: 900;
-    line-height: 1;
-
-    -webkit-text-stroke: 1px #742cff;
-}
-
-.logo-m {
-    left: 2px;
-    color: #e82cff;
-    transform: skewY(-8deg);
-}
-
-.logo-k {
-    left: 20px;
-    color: #18dce5;
-    transform: skewY(8deg);
-}
+/* Brand name */
 
 .brand-name {
-    font-family: Arial, sans-serif;
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 0.2px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.25px;
+
     white-space: nowrap;
 }
 
 
-/* =========================================
+/* =========================================================
    NAVIGATION
-========================================= */
+========================================================= */
 
 .main-nav {
+    margin-left: auto;
+    margin-right: 34px;
+}
+
+
+.nav-list {
     display: flex;
     align-items: center;
-    gap: 53px;
-    margin-left: auto;
-    margin-right: 175px;
+    gap: 30px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
+
+
+.nav-item {
+    position: relative;
+}
+
 
 .nav-link {
     position: relative;
 
-    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+
+    padding: 8px 0;
+
+    color: #94a3b8;
+
+    font-size: 14px;
+    font-weight: 500;
+
     text-decoration: none;
 
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-
     transition:
-        color 0.25s ease,
-        opacity 0.25s ease;
+        color 0.25s ease;
 }
+
+
+/* Hover */
 
 .nav-link:hover {
-    color: #a967ff;
+    color: #f8fafc;
 }
+
+
+/* Active navigation item */
+
+.nav-link.active {
+    color: #f8fafc;
+}
+
+
+/* Gradient underline */
 
 .nav-link::after {
     content: "";
 
     position: absolute;
+
     left: 0;
-    bottom: -8px;
+    bottom: 0;
 
     width: 0;
     height: 2px;
 
-    background: linear-gradient(
-        90deg,
-        #c34de8,
-        #586df6
-    );
-
     border-radius: 10px;
 
-    transition: width 0.25s ease;
+    background:
+        linear-gradient(
+            90deg,
+            #d946ef,
+            #8b5cf6,
+            #06b6d4
+        );
+
+    transition: width 0.3s ease;
 }
+
 
 .nav-link:hover::after,
 .nav-link.active::after {
@@ -146,64 +227,69 @@
 }
 
 
-/* =========================================
+/* =========================================================
    HEADER CTA
-========================================= */
+========================================================= */
 
 .header-cta {
-    min-width: 214px;
-    height: 51px;
-
-    padding: 0 22px 0 25px;
-
     display: inline-flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 18px;
+    justify-content: center;
+    gap: 8px;
+
+    min-height: 42px;
+    padding: 0 17px;
+
+    border-radius: 10px;
+
+    background:
+        linear-gradient(
+            110deg,
+            #d946ef 0%,
+            #a855f7 45%,
+            #6366f1 100%
+        );
 
     color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 600;
+
     text-decoration: none;
 
-    border-radius: 30px;
-
-    background: linear-gradient(
-        100deg,
-        #c052df 0%,
-        #4f70f4 100%
-    );
-
-    font-family: Arial, sans-serif;
-    font-size: 13px;
-    font-weight: 700;
+    box-shadow:
+        0 8px 25px rgba(139, 92, 246, 0.18);
 
     transition:
         transform 0.25s ease,
-        box-shadow 0.25s ease;
+        box-shadow 0.25s ease,
+        filter 0.25s ease;
 }
+
 
 .header-cta:hover {
     transform: translateY(-2px);
 
+    filter: brightness(1.08);
+
     box-shadow:
-        0 10px 30px rgba(99, 76, 240, 0.25);
+        0 12px 30px rgba(139, 92, 246, 0.30);
 }
 
-.cta-arrow {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 1;
 
+.header-cta-icon {
     transition: transform 0.25s ease;
 }
 
-.header-cta:hover .cta-arrow {
-    transform: translateX(4px);
+
+.header-cta:hover .header-cta-icon {
+    transform: translateX(3px);
 }
 
 
-/* =========================================
+/* =========================================================
    MOBILE MENU BUTTON
-========================================= */
+========================================================= */
 
 .menu-toggle {
     display: none;
@@ -211,73 +297,245 @@
     width: 44px;
     height: 44px;
 
-    padding: 9px;
+    padding: 0;
 
-    border: 0;
-    background: transparent;
+    border: 1px solid rgba(148, 163, 184, 0.18);
+    border-radius: 10px;
+
+    background: rgba(11, 22, 37, 0.8);
+
     cursor: pointer;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
 }
+
 
 .menu-toggle span {
     display: block;
 
-    width: 25px;
+    width: 19px;
     height: 2px;
 
-    margin: 5px auto;
+    border-radius: 10px;
 
-    background: #ffffff;
-    border-radius: 5px;
+    background: #f8fafc;
+
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
 }
 
 
-/* =========================================
-   RESPONSIVE
-========================================= */
+/* =========================================================
+   SKIP LINK
+========================================================= */
+
+.skip-link {
+    position: fixed;
+
+    top: -100px;
+    left: 20px;
+
+    padding: 10px 16px;
+
+    background: #f8fafc;
+    color: #030a12;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    z-index: 9999;
+
+    transition: top 0.2s ease;
+}
+
+
+.skip-link:focus {
+    top: 20px;
+}
+
+
+/* =========================================================
+   RESPONSIVE - TABLET
+========================================================= */
 
 @media (max-width: 1100px) {
 
+    .nav-list {
+        gap: 22px;
+    }
+
     .main-nav {
-        gap: 30px;
-        margin-right: 60px;
+        margin-right: 22px;
     }
 
     .header-cta {
-        min-width: 190px;
+        padding: 0 14px;
     }
+
 }
 
 
+/* =========================================================
+   RESPONSIVE - MOBILE
+========================================================= */
+
 @media (max-width: 900px) {
 
-    .header-container {
-        height: 85px;
+    .site-header {
+        height: 72px;
     }
 
-    .main-nav,
+
+    .header-container {
+        width: min(100% - 32px, 700px);
+    }
+
+
+    /* Hide desktop CTA */
+
     .header-cta {
         display: none;
     }
 
+
+    /* Show hamburger */
+
     .menu-toggle {
-        display: block;
+        display: inline-flex;
     }
+
+
+    /* Mobile navigation */
+
+    .main-nav {
+        position: absolute;
+
+        top: calc(100% + 10px);
+        left: 16px;
+        right: 16px;
+
+        margin: 0;
+
+        padding: 12px;
+
+        background: rgba(7, 16, 29, 0.97);
+
+        border: 1px solid rgba(23, 40, 61, 0.9);
+
+        border-radius: 16px;
+
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+
+        box-shadow:
+            0 20px 50px rgba(0, 0, 0, 0.35);
+
+        opacity: 0;
+        visibility: hidden;
+
+        transform: translateY(-10px);
+
+        transition:
+            opacity 0.25s ease,
+            visibility 0.25s ease,
+            transform 0.25s ease;
+    }
+
+
+    /* Open mobile menu */
+
+    .main-nav.is-open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+
+    .nav-list {
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 2px;
+    }
+
+
+    .nav-item {
+        width: 100%;
+    }
+
+
+    .nav-link {
+        display: flex;
+
+        width: 100%;
+
+        padding: 13px 14px;
+
+        border-radius: 9px;
+
+        font-size: 14px;
+    }
+
+
+    .nav-link:hover,
+    .nav-link.active {
+        background: rgba(139, 92, 246, 0.08);
+    }
+
+
+    .nav-link::after {
+        display: none;
+    }
+
+
+    /* Hamburger → X */
+
+    .menu-toggle.is-open span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .menu-toggle.is-open span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.is-open span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
 }
 
 
-@media (max-width: 600px) {
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
 
     .header-container {
-        width: calc(100% - 32px);
-        height: 75px;
+        width: calc(100% - 24px);
     }
+
 
     .brand-name {
-        font-size: 12px;
+        font-size: 15px;
     }
 
+
     .brand-logo {
-        width: 48px;
-        height: 30px;
+        width: 38px;
+        height: 38px;
     }
+
+
+    .main-nav {
+        left: 12px;
+        right: 12px;
+    }
+
 }
