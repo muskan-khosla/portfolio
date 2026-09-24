@@ -297,7 +297,6 @@
     justify-content: space-between;
     gap: 25px;
 }
-
 .footer-copyright,
 .footer-specialties {
     margin: 0;
@@ -305,16 +304,13 @@
     font-size: 14px;
     line-height: 1.5;
 }
-
 .footer-specialties {
     text-align: right;
 }
-
 .footer-specialties span {
     margin: 0 5px;
-    color: #394352;
+    color: var(--color-text-primary);
 }
-
 
 /* =========================================
    FOOTER RESPONSIVE
