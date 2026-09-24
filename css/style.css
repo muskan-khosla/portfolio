@@ -358,6 +358,16 @@
     .cta-content h2 {
         font-size: 27px;
     }
+    .cta-arrow {
+        left: -45px;
+        top: -32px;
+        font-size: 16px;
+        width: 90px;
+    }
+    .cta-arrow-bottom {
+        left: 65px;
+        bottom: -30px;
+    }
 }
 
 @media (max-width: 700px) {
