@@ -370,7 +370,7 @@
 }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
     .cta-section {
         padding: 50px 0;
     }
@@ -389,10 +389,14 @@
     .cta-content p {
         margin-left: auto;
         margin-right: auto;
+        width: 100%;
     }
     .cta-buttons {
         justify-content: center;
         flex-wrap: wrap;
+    }
+    .cta-buttons a {
+        width: auto;
     }
 }
 
@@ -416,6 +420,9 @@
     .cta-button {
         padding: 8px 14px;
         font-size: 8px;
+    }
+    .cta-buttons a {
+        width: 100%;
     }
 }
 
