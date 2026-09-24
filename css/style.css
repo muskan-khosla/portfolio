@@ -230,9 +230,8 @@
 .cta-box {
     position: relative;
     display: grid;
-    grid-template-columns: 190px minmax(0, 1fr);
+    grid-template-columns: 300px minmax(0, 1fr);
     align-items: center;
-    min-height: 185px;
     padding: 35px 42px;
     border-radius: 8px;
     overflow: hidden;
@@ -286,16 +285,13 @@
 
 .cta-handwritten {
     position: relative;
-
-    width: 130px;
-
-    font-family: "Pacifico", cursive;
-    font-size: 14px;
-    line-height: 1.45;
-
-    transform: rotate(-6deg);
-
+    font-family: 'Caveat';
+    font-size: 28px;
+    line-height: 38px;
+    transform: rotate(-20.3deg);
     color: #ffffff;
+    text-align: center;
+    font-weight: bold;
 }
 
 
@@ -331,8 +327,6 @@
 .cta-content {
     position: relative;
     z-index: 1;
-
-    max-width: 650px;
 }
 
 
