@@ -230,7 +230,7 @@
 .cta-box {
     position: relative;
     display: grid;
-    grid-template-columns: 300px minmax(0, 1fr);
+    grid-template-columns: 270px minmax(0, 1fr);
     align-items: center;
     padding: 35px 42px;
     border-radius: var(--radius);
@@ -267,17 +267,16 @@
 
 .cta-arrow {
     position: absolute;
-    left: 0;
-    top: -35px;
+    left: -10px;
+    top: -40px;
     font-size: 30px;
     line-height: 1;
-    color: #ffffff;
+    color: var(--color-text-primary);
 }
-
 .cta-arrow-bottom {
-    left: 100px;
+    left: 170px;
     top: auto;
-    bottom: 0;
+    bottom: -50px;
 }
 
 
