@@ -1,57 +1,37 @@
 /* Header  */
-/* =========================================================
-   HEADER
-========================================================= */
-
 .site-header {
     position: relative;
     z-index: 1000;
-
     width: 100%;
-
     background: var(--color-bg-primary);
 }
 
-
 /* ---------- Header Inner ---------- */
-
 .header-inner {
     min-height: 76px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     gap: 30px;
 }
 
-
 /* ---------- Logo ---------- */
-
 .site-logo {
     display: inline-flex;
     align-items: center;
-
     gap: 5px;
-
     flex-shrink: 0;
 }
-
 .site-logo img {
     width: 70px;
     height: 70px;
     object-fit: contain;
 }
-
 .site-logo span {
     color: var(--color-white);
-
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
-
     text-transform: uppercase;
-    letter-spacing: 0.2px;
-
     white-space: nowrap;
 }
 
