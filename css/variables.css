@@ -75,14 +75,14 @@ ol {
 
     --gradient-primary:
         linear-gradient(
-            180deg,
+            90deg,
             #FF7BE5 0%,
             #9069EC 50%
         );
 
     --gradient-heading:
         linear-gradient(
-            180deg,
+            90deg,
             #FF7BE5 0%,
             #9069EC 50%,
             #1AEED7 100%
@@ -90,7 +90,7 @@ ol {
 
     --gradient-cta:
         linear-gradient(
-            180deg,
+            90deg,
             #FF7BE5 0%,
             #9069EC 50%
         );
@@ -248,7 +248,7 @@ ol {
     padding: 1px;
     border-radius: inherit;
     background: linear-gradient(
-        180deg,
+        90deg,
         #FF7BE5 0%, #9069EC 50%
     );
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -263,7 +263,7 @@ ol {
 }
 .btn-outline:hover::before {
     background: linear-gradient(
-        180deg,
+        90deg,
         #FF7BE5 0%,
         #9069EC 50%,
         #00D9FF 100%
@@ -286,7 +286,7 @@ ol {
     color: #ffffff;
     background:
         linear-gradient(
-            180deg,
+            90deg,
             #FF7BE5 0%, #9069EC 50%
         );
     font-size: 14px;

@@ -85,13 +85,7 @@
     padding: 0 20px;
     border-radius: var(--radius-pill);
     color: #ffffff;
-    background:
-        linear-gradient(
-            100deg,
-            #ed68dc 0%,
-            #9d50e9 50%,
-            #5e72f5 100%
-        );
+    background:var(--gradient-primary);
     font-size: 14px;
     font-weight: 600;
     white-space: nowrap;
