@@ -80,12 +80,27 @@ ol {
             #9069EC 50%
         );
 
+   --gradient-primary-hover:
+        linear-gradient(
+            90deg,
+            #9069EC 50%,
+            #FF7BE5 100%
+        );
+
     --gradient-heading:
         linear-gradient(
             90deg,
             #FF7BE5 0%,
             #9069EC 50%,
             #1AEED7 100%
+        );
+
+   --gradient-secondary-hover:
+        linear-gradient(
+            90deg,
+            #1AEED7 0%,
+            #9069EC 50%,
+            #FF7BE5 100%
         );
 
     --gradient-cta:
@@ -284,11 +299,7 @@ ol {
     padding: 0 25px;
     border-radius: var(--radius-pill);
     color: #ffffff;
-    background:
-        linear-gradient(
-            90deg,
-            #FF7BE5 0%, #9069EC 50%
-        );
+    background: var(--gradient-cta);
     font-size: 14px;
     font-weight: 600;
     transition:

@@ -90,18 +90,20 @@
     font-weight: 600;
     white-space: nowrap;
     transition:
-        transform var(--transition-normal),
-        box-shadow var(--transition-normal);
+    transform var(--transition-normal),
+    box-shadow var(--transition-normal);
 }
 .header-cta span {
     font-size: 15px;
     transition:
-        transform var(--transition-normal);
+    transform var(--transition-normal);
 }
 .header-cta:hover {
     transform: translateY(-2px);
+    background:var(--gradient-primary-hover);
     box-shadow:
         0 8px 25px rgba(155, 77, 232, 0.3);
+    transition: var(--transition-normal);
 }
 .header-cta:hover span {
     transform: translateX(3px);
