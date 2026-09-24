@@ -352,7 +352,8 @@
         padding: 32px;
     }
     .cta-handwritten {
-        font-size: 12px;
+        font-size: 22px;
+        line-height: 28px;
     }
     .cta-content h2 {
         font-size: 27px;
