@@ -53,25 +53,28 @@
     transition:
         color var(--transition-normal);
 }
-.nav-link:hover {
-    color: var(--color-pink);
-}
-
-/* Active Navigation */
+.nav-link:hover,
 .nav-link.active {
-    color: var(--color-pink);
+    color: transparent;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
 }
-.nav-link.active::after {
+.nav-link::after {
     content: "";
     position: absolute;
     left: 0;
-    right: 0;
-    bottom: 1px;
-    height: 1px;
-    background: var(--color-pink);
-    border-radius: 999px;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    border-radius: 10px;
+    background: var(--gradient-primary);
+    transition: width 0.3s ease;
 }
-
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
 /* ---------- Header CTA ---------- */
 .header-cta {
     display: inline-flex;
