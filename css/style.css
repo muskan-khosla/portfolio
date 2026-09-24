@@ -263,13 +263,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 28px;
+    gap: 35px;
 }
 
 .footer-navigation a {
     position: relative;
     color: #ffffff;
-    font-size: 9px;
+    font-size: 14px;
     font-weight: 500;
     text-decoration: none;
     transition:
@@ -288,9 +288,8 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 18px;
+    gap: 16px;
 }
-
 .footer-socials a {
     width: 24px;
     height: 24px;
