@@ -61,7 +61,6 @@
 .main-navigation {
     display: flex;
     align-items: center;
-    border-radius: var(--radius-md);
     gap: 40px;
 
     margin-left: auto;
@@ -245,7 +244,7 @@
 
         border: 1px solid var(--color-border);
 
-        border-radius: var(--radius-md);
+        border-radius: var(--radius);
 
         box-shadow: var(--shadow-card);
 
