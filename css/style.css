@@ -317,10 +317,6 @@
 
 @media (max-width: 900px) {
 
-    .site-footer {
-        padding: 28px 0 20px;
-    }
-
     .footer-top {
         grid-template-columns: 1fr;
         justify-items: center;
@@ -345,7 +341,7 @@
     }
 
     .footer-divider {
-        margin: 24px 0 16px;
+        margin: 40px 0 30px;
     }
 
     .footer-bottom {
