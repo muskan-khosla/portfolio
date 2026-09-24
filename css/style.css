@@ -224,7 +224,7 @@
    CTA SECTION
 ========================================= */
 .cta-section {
-    padding: 100px 0;
+    padding: 100px 0 20px;
     background: #02080f;
 }
 .cta-box {
@@ -236,7 +236,6 @@
     border-radius: 8px;
     overflow: hidden;
     background: var(--gradient-heading);
-
     box-shadow:
         0 20px 50px rgba(0, 0, 0, 0.2);
 }
