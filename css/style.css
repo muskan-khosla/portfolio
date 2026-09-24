@@ -277,11 +277,9 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: #ffffff;
+    color: var(--color-text-primary);
     text-decoration: none;
-    transition:
-        color 0.3s ease,
-        transform 0.3s ease;
+    transition: var(--transition-normal);
 }
 .footer-socials a:hover {
     color: #ec68dc;
