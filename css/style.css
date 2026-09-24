@@ -300,7 +300,7 @@
 .footer-copyright,
 .footer-specialties {
     margin: 0;
-    color: #6f7887;
+    color: var(--color-text-secondary);
     font-size: 14px;
     line-height: 1.5;
 }
@@ -309,7 +309,7 @@
 }
 .footer-specialties span {
     margin: 0 5px;
-    color: var(--color-text-primary);
+    color: var(--color-text-secondary);
 }
 
 /* =========================================
