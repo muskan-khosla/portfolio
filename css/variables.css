@@ -1,141 +1,375 @@
+/* =========================================================
+   RESET
+========================================================= */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    background-color: #030A12;
+    color: #ffffff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+button {
+    border: none;
+    cursor: pointer;
+}
+ul,
+ol {
+    list-style: none;
+}
+
+
+/* =========================================================
+   DESIGN TOKENS
+========================================================= */
 :root {
-  /* ===== Brand Colors ===== */
-  --color-bg: #030914;
-  --color-surface: #071426;
-  --color-surface-light: #0D2038;
 
-  --color-purple: #C94BFF;
-  --color-violet: #8B5CF6;
-  --color-cyan: #00D9FF;
-  --color-pink: #FF55D6;
+    /* ---------- Background ---------- */
 
-  /* ===== Typography ===== */
-  --color-heading: #F8FAFC;
-  --color-body: #CBD5E1;
-  --color-muted: #94A3B8;
+    --color-bg-primary: #030A12;
+    --color-bg-secondary: #071426;
+    --color-bg-card: #071426;
 
-  /* ===== Borders ===== */
-  --color-border: rgba(71, 117, 168, 0.35);
+    /* ---------- Text ---------- */
 
-  /* ===== Gradients ===== */
-  --gradient-primary: linear-gradient(
-    90deg,
-    #D946EF 0%,
-    #8B5CF6 50%,
-    #00BFFF 100%
-  );
+    --color-white: #ffffff;
+    --color-text-primary: #ffffff;
+    --color-text-secondary: rgb(255, 255, 255, 69.8%);
 
-  --gradient-text: linear-gradient(
-    90deg,
-    #D946EF 0%,
-    #818CF8 50%,
-    #22D3EE 100%
-  );
+    /* ---------- Brand Colors ---------- */
 
-  --gradient-cta: linear-gradient(
-    90deg,
-    #4C1D95 0%,
-    #2563EB 50%,
-    #06B6D4 100%
-  );
+    --color-pink: #FF7BE5;
+    --color-purple: #9069EC;
+    --color-cyan: #1AEED7;
 
-  /* ===== Layout ===== */
-  --radius-card: 16px;
-  --radius-button: 999px;
+    /* ---------- Borders ---------- */
 
-  /* ========================================
-     FONT FAMILIES
-     ======================================== */
+    --color-border: rgba(71, 117, 168, 0.35);
 
-  /* Main font — clean, modern, professional */
-  --font-primary: 'Poppins', sans-serif;
+    /* ---------- Gradients ---------- */
 
-  /* Elegant headings — About page */
-  --font-display: 'Playfair Display', serif;
+    --gradient-primary:
+        linear-gradient(
+            180deg,
+            #FF7BE5 0%,
+            #9069EC 50%
+        );
 
-  /* Handwritten decorative text */
-  --font-script: 'Caveat', cursive;
+    --gradient-heading:
+        linear-gradient(
+            180deg,
+            #FF7BE5 0%,
+            #9069EC 50%,
+            #1AEED7 100%
+        );
 
+    --gradient-cta:
+        linear-gradient(
+            180deg,
+            #FF7BE5 0%,
+            #9069EC 50%
+        );
 
-  /* ========================================
-     FONT WEIGHTS
-     ======================================== */
+    /* ---------- Layout ---------- */
 
-  --font-weight-regular: 400;
-  --font-weight-medium: 500;
-  --font-weight-semibold: 600;
-  --font-weight-bold: 700;
+    --container-width: 1240px;
+    --container-padding: 20px;
 
+    /* ---------- Radius ---------- */
 
-  /* ========================================
-     RESPONSIVE FONT SIZES
-     ======================================== */
+    --radius: 16px;
+    --radius-pill: 100px;
 
-  /* Hero heading */
-  --font-size-h1: clamp(2.125rem, 4vw, 3.5rem);
-  /* 34px → 56px */
+    /* ---------- Shadows ---------- */
 
-  /* Section heading */
-  --font-size-h2: clamp(1.75rem, 3vw, 2.5rem);
-  /* 28px → 40px */
+    --shadow-card:
+        0 15px 40px rgba(0, 0, 0, 0.18);
 
-  /* Card heading */
-  --font-size-h3: clamp(1.125rem, 1.5vw, 1.25rem);
-  /* 18px → 20px */
+    /* ---------- Transitions ---------- */
 
-  /* Small heading */
-  --font-size-h4: clamp(1rem, 1.3vw, 1.125rem);
-  /* 16px → 18px */
-
-  /* Large intro text */
-  --font-size-lead: clamp(1rem, 1.5vw, 1.125rem);
-  /* 16px → 18px */
-
-  /* Standard body text */
-  --font-size-body: clamp(0.9375rem, 1.1vw, 1rem);
-  /* 15px → 16px */
-
-  /* Navigation links */
-  --font-size-nav: 0.875rem;
-  /* 14px */
-
-  /* Button text */
-  --font-size-button: 0.875rem;
-  /* 14px */
-
-  /* Small labels and badges */
-  --font-size-small: 0.75rem;
-  /* 12px */
-
-  /* Footer text */
-  --font-size-footer: 0.8125rem;
-  /* 13px */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+}
 
 
-  /* ========================================
-     DISPLAY FONT SIZES
-     ======================================== */
+/* =========================================================
+   GLOBAL CONTAINER
+========================================================= */
 
-  /* About page main heading */
-  --font-size-display: clamp(2.25rem, 4vw, 3.5rem);
-  /* 36px → 56px */
-
-  /* About page story heading */
-  --font-size-story: clamp(1.875rem, 3vw, 2.5rem);
-  /* 30px → 40px */
-
-  /* Handwritten notes */
-  --font-size-script: clamp(1.375rem, 2vw, 1.75rem);
-  /* 22px → 28px */
+.container {
+    width: min(
+        calc(100% - (var(--container-padding) * 2)),
+        var(--container-width)
+    );
+    margin-inline: auto;
+}
 
 
-  /* ========================================
-     LINE HEIGHTS
-     ======================================== */
+/* =========================================================
+   SECTIONS
+========================================================= */
+.section {
+    position: relative;
+    padding: 100px 0;
+}
+.section-dark {
+    background-color: var(--color-bg-primary);
+}
+.section-light-dark {
+    background-color: var(--color-bg-secondary);
+}
 
-  --line-height-tight: 1.15;
-  --line-height-heading: 1.2;
-  --line-height-normal: 1.5;
-  --line-height-body: 1.7;
-  --line-height-relaxed: 1.8;
+
+/* =========================================================
+   SECTION BADGE
+========================================================= */
+.section-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 15px;
+    border-radius: var(--radius-pill);
+    background: var(--gradient-cta);
+    color: var(--color-white);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+/* .section-badge::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    margin-right: 7px;
+    border-radius: 50%;
+    background-color: var(--color-cyan);
+    box-shadow: 0 0 10px rgba(33, 199, 223, 0.7);
+} */
+
+
+/* =========================================================
+   SECTION HEADINGS
+========================================================= */
+.section-heading {
+    margin-top: 16px;
+    font-size: clamp(34px, 4vw, 56px);
+    font-weight: 700;
+    line-height: 1.12;
+}
+.gradient-text {
+    background: var(--gradient-heading);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+
+/* =========================================================
+   SECTION DESCRIPTION
+========================================================= */
+.section-description {
+    max-width: 70%;
+    margin: 18px auto 0;
+    color: var(--color-text-secondary);
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 46px;
+    padding: 0 24px;
+    border-radius: var(--radius-pill);
+    font-size: 14px;
+    font-weight: 600;
+    transition:
+        transform var(--transition-normal),
+        box-shadow var(--transition-normal),
+        opacity var(--transition-normal);
+}
+.btn:hover {
+    transform: translateY(-2px);
+}
+.btn-primary {
+    color: #ffffff;
+    background: var(--gradient-primary);
+    box-shadow:
+        0 8px 25px rgba(155, 77, 232, 0.2);
+}
+.btn-primary:hover {
+    box-shadow:
+        0 12px 30px rgba(155, 77, 232, 0.35);
+}
+.btn-outline {
+    position: relative;
+    color: #ffffff;
+    background: transparent;
+    border: none;
+    border-radius: 999px;
+    isolation: isolate;
+}
+/* Gradient border */
+.btn-outline::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    border-radius: inherit;
+    background: linear-gradient(
+        180deg,
+        #FF7BE5 0%, #9069EC 50%
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+/* Hover */
+.btn-outline:hover {
+    background: rgba(155, 77, 232, 0.08);
+}
+.btn-outline:hover::before {
+    background: linear-gradient(
+        180deg,
+        #FF7BE5 0%,
+        #9069EC 50%,
+        #00D9FF 100%
+    );
+}
+
+
+/* =========================================================
+   GRADIENT BUTTON
+========================================================= */
+.gradient-button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 46px;
+    padding: 0 25px;
+    border-radius: var(--radius-pill);
+    color: #ffffff;
+    background:
+        linear-gradient(
+            180deg,
+            #FF7BE5 0%, #9069EC 50%
+        );
+    font-size: 14px;
+    font-weight: 600;
+    transition:
+        transform var(--transition-normal),
+        box-shadow var(--transition-normal);
+}
+.gradient-button:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 10px 28px rgba(155, 77, 232, 0.35);
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+.card {
+    background: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-card);
+}
+
+/* =========================================================
+   HANDWRITTEN TEXT
+========================================================= */
+.handwritten {
+    font-family: "Caveat";
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+:focus-visible {
+    outline: 2px solid var(--color-cyan);
+    outline-offset: 4px;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 992px) {
+    :root {
+        --container-padding: 24px;
+    }
+    .section {
+        padding: 80px 0;
+    }
+}
+
+
+@media (max-width: 767px) {
+    :root {
+        --container-padding: 20px;
+    }
+    .section {
+        padding: 70px 0;
+    }
+    .section-heading {
+        letter-spacing: -1px;
+    }
+    .section-description {
+        font-size: 15px;
+    }
+    .btn,
+    .gradient-button {
+        min-height: 44px;
+        padding-inline: 20px;
+        font-size: 13px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .section {
+        padding: 60px 0;
+    }
+    .section-heading {
+        font-size: 32px;
+    }
 }
