@@ -249,17 +249,21 @@
 }
 .footer-navigation a {
     position: relative;
-    color: #ffffff;
+    color: var(--color-text-primary);
     font-size: 14px;
     font-weight: 500;
     text-decoration: none;
-    transition:
-        color 0.3s ease,
-        transform 0.3s ease;
+    transition: var(--transition-normal);
 }
-.footer-navigation a:hover {
-    color: #ec68dc;
+.footer-navigation a:hover,
+.footer-navigation a.active
+{
+    color: transparent;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
 }
+
 /* Social Icons */
 .footer-socials {
     display: flex;
