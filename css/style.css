@@ -236,8 +236,8 @@
     border-radius: var(--radius);
     overflow: hidden;
     background: var(--gradient-heading);
-    box-shadow:
-        0 20px 50px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    gap: 30px;
 }
 .cta-decoration {
     position: relative;
@@ -247,60 +247,40 @@
     justify-content: center;
     color: #ffffff;
 }
-
-
-/* Handwritten text */
-
 .cta-handwritten {
     position: relative;
     font-family: 'Caveat';
     font-size: 28px;
-    line-height: 38px;
+    line-height: 35px;
     transform: rotate(-20.3deg);
     color: #ffffff;
     text-align: center;
     font-weight: bold;
+    left: -20px;
 }
-
-
-/* Decorative arrows */
-
 .cta-arrow {
     position: absolute;
-    left: -10px;
+    left: -30px;
     top: -40px;
     font-size: 30px;
     line-height: 1;
     color: var(--color-text-primary);
 }
 .cta-arrow-bottom {
-    left: 170px;
+    left: 145px;
     top: auto;
-    bottom: -50px;
+    bottom: -40px;
 }
-
-
-/* =========================================
-   CTA CONTENT
-========================================= */
-
 .cta-content {
     position: relative;
     z-index: 1;
 }
-
-
 .cta-content h2 {
     margin: 0 0 10px;
-
     color: #ffffff;
-
-    font-size: clamp(25px, 3vw, 34px);
+    font-size: clamp(25px, 3vw, 35px);
     font-weight: 700;
-
     line-height: 1.15;
-
-    letter-spacing: -0.8px;
 }
 
 
