@@ -267,15 +267,10 @@
 
 .cta-arrow {
     position: absolute;
-
     left: 0;
-    top: 0;
-
+    top: -35px;
     font-size: 30px;
     line-height: 1;
-
-    transform: rotate(-20deg);
-
     color: #ffffff;
 }
 
@@ -283,8 +278,6 @@
     left: 100px;
     top: auto;
     bottom: 0;
-
-    transform: rotate(15deg);
 }
 
 
