@@ -61,7 +61,7 @@
 .main-navigation {
     display: flex;
     align-items: center;
-
+    border-radius: var(--radius-md);
     gap: 40px;
 
     margin-left: auto;
