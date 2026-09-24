@@ -220,19 +220,14 @@
 
 
 
-/* Footer  */
 /* =========================================
    FOOTER
 ========================================= */
-
 .site-footer {
     position: relative;
     background: var(--color-bg-primary);
     padding: 80px 0 25px;
 }
-
-/* Footer Top */
-
 .footer-top {
     min-height: 55px;
     display: grid;
@@ -240,31 +235,13 @@
     align-items: center;
     gap: 30px;
 }
-
-/* Footer Logo */
-
-.footer-logo {
-    display: inline-flex;
-    align-items: center;
-    width: fit-content;
-    text-decoration: none;
-}
-
-.footer-logo img {
-    display: block;
-    width: 100px;
-    height: auto;
-}
-
 /* Footer Navigation */
-
 .footer-navigation {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 35px;
 }
-
 .footer-navigation a {
     position: relative;
     color: #ffffff;
@@ -275,14 +252,11 @@
         color 0.3s ease,
         transform 0.3s ease;
 }
-
 .footer-navigation a:hover {
     color: #ec68dc;
     transform: translateY(-1px);
 }
-
 /* Social Icons */
-
 .footer-socials {
     display: flex;
     align-items: center;
@@ -301,34 +275,27 @@
         color 0.3s ease,
         transform 0.3s ease;
 }
-
 .footer-socials a:hover {
     color: #ec68dc;
     transform: translateY(-2px);
 }
-
 .footer-socials svg {
     width: 30px;
     height: 30px;
     fill: currentColor;
 }
-
 /* Footer Divider */
-
 .footer-divider {
     width: 100%;
     height: 1px;
-    margin: 20px 0 15px;
-    background: rgba(255, 255, 255, 0.08);
+    margin: 50px 0 25px;
+    background: var(--color-border);
 }
-
-/* Footer Bottom */
-
 .footer-bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 25px;
 }
 
 .footer-copyright,
