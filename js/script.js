@@ -1,14 +1,69 @@
 "use strict";
 
-/*
-=========================================================
-PORTFOLIO WEBSITE
-Muskan Khosla
-=========================================================
-*/
-
 document.addEventListener("DOMContentLoaded", () => {
 
-    console.log("Portfolio website loaded.");
+    /*
+    ========================================================
+    MOBILE NAVIGATION
+    ========================================================
+    */
+
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navigation = document.querySelector(".main-navigation");
+
+    if (menuToggle && navigation) {
+
+        menuToggle.addEventListener("click", () => {
+
+            const isOpen =
+                menuToggle.classList.toggle("is-active");
+
+            navigation.classList.toggle("is-open");
+
+            menuToggle.setAttribute(
+                "aria-expanded",
+                isOpen
+            );
+
+            menuToggle.setAttribute(
+                "aria-label",
+                isOpen
+                    ? "Close navigation menu"
+                    : "Open navigation menu"
+            );
+
+        });
+
+
+        /*
+        Close menu after clicking a navigation link
+        */
+
+        const navLinks =
+            navigation.querySelectorAll(".nav-link");
+
+        navLinks.forEach((link) => {
+
+            link.addEventListener("click", () => {
+
+                menuToggle.classList.remove("is-active");
+
+                navigation.classList.remove("is-open");
+
+                menuToggle.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
+                menuToggle.setAttribute(
+                    "aria-label",
+                    "Open navigation menu"
+                );
+
+            });
+
+        });
+
+    }
 
 });
