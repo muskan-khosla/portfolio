@@ -2,11 +2,9 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    /*
-    ========================================================
-    MOBILE NAVIGATION
-    ========================================================
-    */
+    /* ================================
+       MOBILE NAVIGATION
+    ================================= */
 
     const menuToggle = document.querySelector(".menu-toggle");
     const navigation = document.querySelector(".main-navigation");
@@ -15,8 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         menuToggle.addEventListener("click", () => {
 
-            const isOpen =
-                menuToggle.classList.toggle("is-active");
+            const isOpen = menuToggle.classList.toggle("is-active");
 
             navigation.classList.toggle("is-open");
 
@@ -31,16 +28,10 @@ document.addEventListener("DOMContentLoaded", () => {
                     ? "Close navigation menu"
                     : "Open navigation menu"
             );
-
         });
 
 
-        /*
-        Close menu after clicking a navigation link
-        */
-
-        const navLinks =
-            navigation.querySelectorAll(".nav-link");
+        const navLinks = navigation.querySelectorAll(".nav-link");
 
         navLinks.forEach((link) => {
 
@@ -63,22 +54,17 @@ document.addEventListener("DOMContentLoaded", () => {
             });
 
         });
+    }
 
+
+    /* ================================
+       CURRENT YEAR
+    ================================= */
+
+    const currentYear = document.getElementById("current-year");
+
+    if (currentYear) {
+        currentYear.textContent = new Date().getFullYear();
     }
 
 });
-
-
-// Footer 
-
-/*
-========================================================
-CURRENT YEAR
-========================================================
-*/
-
-const currentYear = document.getElementById("current-year");
-
-if (currentYear) {
-    currentYear.textContent = new Date().getFullYear();
-}
