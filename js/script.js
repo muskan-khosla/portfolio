@@ -67,4 +67,107 @@ document.addEventListener("DOMContentLoaded", () => {
         currentYear.textContent = new Date().getFullYear();
     }
 
+
+    // =========================================
+// FEATURED PROJECT SLIDER
+// =========================================
+
+const projectSlider = document.querySelector(".featured-project-slider");
+
+if (projectSlider) {
+    const track = projectSlider.querySelector(".featured-project-track");
+    const slides = projectSlider.querySelectorAll(".featured-project-slide");
+    const previousButton = projectSlider.querySelector(".project-prev");
+    const nextButton = projectSlider.querySelector(".project-next");
+    const counter = projectSlider.querySelector(".project-counter");
+
+    let currentSlide = 0;
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    const totalSlides = slides.length;
+
+    function updateSlider() {
+        track.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+        counter.textContent = `${currentSlide + 1} / ${totalSlides}`;
+    }
+
+    function showNextSlide() {
+        currentSlide++;
+
+        if (currentSlide >= totalSlides) {
+            currentSlide = 0;
+        }
+
+        updateSlider();
+    }
+
+    function showPreviousSlide() {
+        currentSlide--;
+
+        if (currentSlide < 0) {
+            currentSlide = totalSlides - 1;
+        }
+
+        updateSlider();
+    }
+
+    if (nextButton) {
+        nextButton.addEventListener("click", showNextSlide);
+    }
+
+    if (previousButton) {
+        previousButton.addEventListener("click", showPreviousSlide);
+    }
+
+    // -----------------------------------------
+    // TOUCH / SWIPE
+    // -----------------------------------------
+
+    track.addEventListener(
+        "touchstart",
+        (event) => {
+            touchStartX = event.changedTouches[0].screenX;
+        },
+        { passive: true }
+    );
+
+    track.addEventListener(
+        "touchend",
+        (event) => {
+            touchEndX = event.changedTouches[0].screenX;
+
+            const swipeDistance = touchEndX - touchStartX;
+
+            if (Math.abs(swipeDistance) < 40) {
+                return;
+            }
+
+            if (swipeDistance < 0) {
+                showNextSlide();
+            } else {
+                showPreviousSlide();
+            }
+        },
+        { passive: true }
+    );
+
+    // -----------------------------------------
+    // KEYBOARD NAVIGATION
+    // -----------------------------------------
+
+    projectSlider.addEventListener("keydown", (event) => {
+            if (event.key === "ArrowRight") {
+                showNextSlide();
+            }
+
+            if (event.key === "ArrowLeft") {
+                showPreviousSlide();
+            }
+        });
+
+        updateSlider();
+    }
+
 });

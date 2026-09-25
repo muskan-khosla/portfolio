@@ -241,16 +241,36 @@
 }
 
 
-/* -----------------------------------------
-   FEATURED PROJECT
------------------------------------------ */
+/* =========================================
+   PROJECT SLIDER
+========================================= */
 
-.featured-project {
+.featured-project-slider {
     position: relative;
+    width: 100%;
+    min-width: 0;
+}
+
+.featured-project-viewport {
+    width: 100%;
+    overflow: hidden;
+}
+
+.featured-project-track {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease;
+    will-change: transform;
+}
+
+.featured-project-slide {
+    flex: 0 0 100%;
+    min-width: 100%;
     display: grid;
     grid-template-columns: minmax(190px, 0.95fr) minmax(150px, 0.8fr);
     align-items: center;
     gap: 22px;
+    box-sizing: border-box;
 }
 
 
@@ -394,57 +414,63 @@
 
 
 /* -----------------------------------------
-   PROJECT NAVIGATION
+   SLIDER NAVIGATION
 ----------------------------------------- */
 
 .featured-project-navigation {
-    position: absolute;
-    right: 0;
-    bottom: -30px;
     display: flex;
     align-items: center;
-    gap: 8px;
+    justify-content: flex-end;
+    gap: 7px;
+    margin-top: 13px;
 }
 
 .project-counter {
+    min-width: 28px;
     color: #697486;
     font-size: 6px;
+    text-align: center;
 }
 
 .project-nav-button {
-    width: 17px;
-    height: 17px;
+    width: 18px;
+    height: 18px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     padding: 0;
-    border: 0;
+    border: 1px solid rgba(155, 77, 232, 0.3);
     border-radius: 50%;
     color: #c765e7;
     background: transparent;
     font-size: 9px;
     cursor: pointer;
     transition:
+        color 0.3s ease,
         background 0.3s ease,
-        color 0.3s ease;
+        border-color 0.3s ease,
+        transform 0.3s ease;
 }
 
 .project-nav-button:hover {
     color: #ffffff;
+    border-color: rgba(236, 104, 220, 0.65);
     background: rgba(155, 77, 232, 0.12);
+    transform: translateY(-1px);
 }
 
 
-/* -----------------------------------------
+/* =========================================
    RESPONSIVE
------------------------------------------ */
+========================================= */
 
 @media (max-width: 900px) {
+
     .featured-projects-grid {
         gap: 45px;
     }
 
-    .featured-project {
+    .featured-project-slide {
         grid-template-columns: 1fr;
         gap: 18px;
     }
@@ -454,11 +480,13 @@
     }
 
     .featured-project-navigation {
-        bottom: -28px;
+        margin-top: 14px;
     }
 }
 
+
 @media (max-width: 700px) {
+
     .featured-projects-section {
         padding: 60px 0;
     }
@@ -488,19 +516,19 @@
         margin-top: 2px;
     }
 
-    .featured-project {
-        max-width: 600px;
-        grid-template-columns: minmax(230px, 1fr) minmax(170px, 0.75fr);
-        margin: 0 auto;
+    .featured-project-navigation {
+        justify-content: center;
     }
 }
 
+
 @media (max-width: 520px) {
+
     .featured-projects-section {
         padding: 50px 0;
     }
 
-    .featured-project {
+    .featured-project-slide {
         grid-template-columns: 1fr;
     }
 
@@ -525,9 +553,7 @@
     }
 
     .featured-project-navigation {
-        position: static;
-        justify-content: center;
-        margin-top: 4px;
+        margin-top: 15px;
     }
 }
 
