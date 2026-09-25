@@ -1,0 +1,23 @@
+<svg width="34" height="30" viewBox="0 0 34 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<mask id="mask0_271_3" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="34" height="31">
+<rect width="27.1987" height="27.2727" fill="url(#pattern0_271_3)"/>
+<rect x="13.6016" y="9.54688" width="20.399" height="20.4545" fill="url(#pattern1_271_3)"/>
+</mask>
+<g mask="url(#mask0_271_3)">
+<rect width="30" height="30" fill="url(#paint0_linear_271_3)"/>
+</g>
+<defs>
+<pattern id="pattern0_271_3" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_271_3" transform="matrix(0.0111111 0 0 0.011081 0 0.00135687)"/>
+</pattern>
+<pattern id="pattern1_271_3" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image1_271_3" transform="matrix(0.0111111 0 0 0.011081 0 0.0013569)"/>
+</pattern>
+<linearGradient id="paint0_linear_271_3" x1="15" y1="0" x2="15" y2="30" gradientUnits="userSpaceOnUse">
+<stop stop-color="#C063DF"/>
+<stop offset="1" stop-color="#7F54B3"/>
+</linearGradient>
+<image id="image0_271_3" width="90" height="90" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB5ElEQVR4nO3cR07DQBiG4e8YlA31EFTRLkQ5CyXcAxZA4BTACVjQpAAS7AY58iKKMkFMzMfEfh/p347Gb4pnY0sAAAAAAAAAgF/YlNSSdCfpQ1Jo2HyU134iaeMvAs9LusrgQkNmcyFptqrIy5KeM7iokOk8SVoaNfKMpMcMLiZkPs/lrz7ZZQYXEcZk2qmRtzLYfBizSbpBtiKLfUralTSh5pmUtFc2GNTmOGXR+8hiReSm24+0uU1Z7D2yWBO/yf0mIm3elCD2P4SK+xB6OEKbENqE0CaENiG0CaFNCG1CaBNCmxDahNAmhDYhtAmhTQhtQmgTQpsQ2oTQJoQ2IbQJoU0IbUJoE0KbENqE0CaENiG0CaFNCG1CaBNCmxDahNAmhDYhtEllfXjOMG4q0qajCp+cLR7RbbqDKp+cPYos9lnGLp6LbprJ8vHkr0ibw5RFV4f8DzEaOCupn+B5BpsPYzJnGkFx43vI4CJC5lO8pWc69XTBqLLpDDtdMKpsuqeR0ww2Emo+3TfT7GSwkVDzKd5P1dXOYDOhpnPTe0OcK1+U99+bCjWbF0kL/aePdUmvGWwu1CjyWuyotyjpOoNNhjGf9qBv8iDb5Rtli2MJ52z9OO9lq5PeGx8AAAAAAIBq6hskILQ0hEHyVgAAAABJRU5ErkJggg=="/>
+<image id="image1_271_3" width="90" height="90" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB6UlEQVR4nO3dO07DUABE0akIS4CQJfLpgBUSqIClIGhSDYrkgiIFRCH4oDfSNG5878iy3b1kZGRkZHY5TXKT5CnJR5LOrFumxyTXSRZBs0ryOoMx+82+TMzckyyN3C9jU0/2zQxG6569CpSnGQzWPbsOlPcZDNY9u2VnUrxM/nqojqFDlIkiUISTFyjCyQsU4eQFinDyAkU4eYEinLxAEU5eoAgnL1CEkxcowskLFOHkBYpw8gJFOHmBIpy8QBFOXqAIJy9QhJMXKMLJCxTh5AWKcPICRTh5gSKcvEARTl6gCCcvUISTFyjCyQsU4eQFinDyAkU4eYEinLxAEU5eoAgnL1CEkxcowskLFOHkBYpw8gJFOHmBIpy8QBFOXqAIJy9QhJMXKMLJCxTh5AWKcPICRTh5gSKcvEARTl6gCCcvUISTFyjCyQsU4eQFinDyAkU4eYEinLxAEU5eoAgnL1CEkxcowskLFOHkBYpw/ligSJn89VAdQ4cok9+Q3yS5TbKcejddG0MfuHc77rO9NoY+cM933OdsDH34Lnfc52IMfZxXx/0Y+vDdTGOPj+E/OfDmLVDGEU5HyvUMBuuevQyUxXRkXbE+JzkJlhU29vP0u0hmMZ0PuJ7pB3LL9DC9LrgneWRkJP89n7x3Dkl5oH+5AAAAAElFTkSuQmCC"/>
+</defs>
+</svg>
