@@ -71,7 +71,7 @@
     align-items: center;
     gap: 7px;
     margin-top: 20px;
-    padding: 8px 30px;
+    padding: 6px 30px;
     border: 1px solid transparent;
     border-radius: 50px;
     color: #ffffff;
@@ -86,10 +86,9 @@
         filter 0.3s ease;
 }
 
-.about-me-link:hover img {
-    transform: rotate(-30deg);
+.about-me-link img {
+    width: 20px;
 }
-
 .about-me-link:hover {
     transform: translateY(-1px);
     background: var(--gradient-primary);
