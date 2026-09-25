@@ -88,64 +88,41 @@
     background: var(--gradient-primary);
 }
 
-/* -----------------------------------------
-   RESPONSIVE
------------------------------------------ */
-
+/*  RESPONSIVE  */
 @media (max-width: 900px) {
     .about-me-grid {
         gap: 45px;
     }
-
-    .about-me-photo {
-        width: 235px;
-        height: 260px;
-    }
-
-    .about-me-visual {
-        min-height: 255px;
-    }
-
-    .about-me-content .section-heading {
-        font-size: 26px;
+    .about-me-points {
+        gap:15px;
     }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
     .about-me-section {
         padding: 55px 0 60px;
     }
-
     .about-me-grid {
         grid-template-columns: 1fr;
         gap: 35px;
     }
-
     .about-me-visual {
-        min-height: 270px;
         order: 1;
     }
-
     .about-me-content {
         order: 2;
         max-width: 500px;
         margin: 0 auto;
         text-align: center;
     }
-
-    .about-me-content .section-heading {
-        font-size: 25px;
-    }
-
     .about-me-intro {
         margin-left: auto;
         margin-right: auto;
     }
-
     .about-me-points {
         justify-content: center;
+        gap:15px;
     }
-
     .about-me-link {
         margin-top: 18px;
     }
@@ -155,42 +132,14 @@
     .about-me-section {
         padding: 48px 0 52px;
     }
-
-    .about-me-visual {
-        min-height: 240px;
-    }
-
-    .about-me-photo {
-        width: 215px;
-        height: 235px;
-    }
-
     .about-me-shape {
         transform: scale(0.9) rotate(-32deg);
     }
-
     .about-me-visual::after {
         transform: scale(0.9) rotate(18deg);
     }
-
-    .about-handwritten {
-        font-size: 15px;
-    }
-
-    .about-me-content .section-heading {
-        font-size: 23px;
-    }
-
-    .about-me-intro {
-        font-size: 8.5px;
-    }
-
     .about-me-points {
         gap: 12px;
-    }
-
-    .about-me-point {
-        font-size: 7.5px;
     }
 }
 
