@@ -235,7 +235,7 @@
     padding: 35px 42px;
     border-radius: var(--radius);
     overflow: hidden;
-    background: var(--gradient-heading);
+    background: var(--cta-gradient);
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
     gap: 30px;
 }
