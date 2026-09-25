@@ -376,10 +376,9 @@
     line-height: 1.4;
 }
 .why-work-item p {
-    max-width: 245px;
     margin: 0;
-    color: #7f8999;
-    font-size: 9px;
+    color: var(--color-text-secondary);
+    font-size: 14px;
     line-height: 1.7;
 }
 
