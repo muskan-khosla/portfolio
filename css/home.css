@@ -11,7 +11,7 @@
 
 .about-me-grid {
     display: grid;
-    grid-template-columns: 0.95fr 1.05fr;
+    grid-template-columns: 0.90fr 1.10fr;
     align-items: center;
     gap: 40px;
     margin: 0 auto;
