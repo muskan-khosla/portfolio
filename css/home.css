@@ -179,22 +179,9 @@
     margin: 0 0 22px;
     text-align: left;
 }
-
-.featured-projects-header .section-badge {
-    margin-bottom: 13px;
-}
-
-.featured-projects-header .section-heading {
-    font-size: clamp(27px, 3vw, 34px);
-}
-
 .featured-projects-header .section-description {
-    max-width: 300px;
-    margin: 12px 0 0;
-    font-size: 9px;
-    line-height: 1.7;
+    max-width: 100%;
 }
-
 
 /* -----------------------------------------
    VIEW ALL BUTTON
