@@ -34,7 +34,7 @@
 
 /*  RIGHT CONTENT */
 .about-me-intro {
-    margin: 0 0 15px;
+    margin: 20px 0 15px;
     color: var(--color-text-secondary);
     font-size: 16px;
     font-weight: 400;
@@ -68,7 +68,7 @@
     padding: 6px 30px;
     border: 1px solid transparent;
     border-radius: 50px;
-    color: #ffffff;
+    color: var(--color-white);
     background:
         linear-gradient(#061426, #061426) padding-box,
         var(--gradient-heading) border-box;
