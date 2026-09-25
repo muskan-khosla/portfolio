@@ -4,7 +4,6 @@
 
 /* Section wrapper heading */
 .section-header {
-    max-width: 650px;
     margin: 0 auto 55px;
     text-align: center;
 }
@@ -45,7 +44,7 @@
 
 /*  SECTION SHORT DESCRIPTION */
 .section-description {
-    max-width: 75%;
+    max-width: 65%;
     margin: 13px auto 0;
     color: var(--color-text-secondary);
     font-size: 16px;
@@ -373,7 +372,7 @@
 .why-work-item h3 {
     margin: 0 0 8px;
     color: #ffffff;
-    font-size: 12px;
+    font-size: 20px;
     font-weight: 600;
     line-height: 1.4;
 }
