@@ -323,7 +323,8 @@
 }
 .cta-button-dark:hover {
     transform: translateY(-2px);
-    background: var(--color-bg-secondary);
+    background: var(--color-white);
+    color: var(--color-bg-primary);
     box-shadow:
         0 8px 20px rgba(0, 0, 0, 0.2);
 }
@@ -336,6 +337,8 @@
     transform: translateY(-2px);
     box-shadow:
         0 8px 20px rgba(0, 0, 0, 0.18);
+    background-color: var(--color-bg-primary);
+    color: var(--color-white);
 }
 
 
