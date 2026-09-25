@@ -25,39 +25,20 @@
     white-space: nowrap;
 }
 
-/* -----------------------------------------
-   2. MAIN SECTION HEADING
------------------------------------------ */
-
+/*  MAIN SECTION HEADING  */
 .section-heading {
     margin: 0;
-
-    color: #ffffff;
-
-    font-size: clamp(27px, 3vw, 36px);
+    color: var(--color-white);
+    font-size: clamp(27px, 3vw, 56px);
     font-weight: 700;
-
     line-height: 1.2;
-
-    letter-spacing: -0.8px;
 }
 
-
-/* -----------------------------------------
-   3. GRADIENT PART OF HEADING
------------------------------------------ */
-
+/*  GRADIENT PART OF HEADING */
 .gradient-text {
-    background: linear-gradient(
-        90deg,
-        #ec68dc 0%,
-        #9b4de8 50%,
-        #21c7df 100%
-    );
-
+    background: var(--gradient-heading);
     -webkit-background-clip: text;
     background-clip: text;
-
     -webkit-text-fill-color: transparent;
 }
 
