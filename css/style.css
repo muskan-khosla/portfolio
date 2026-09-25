@@ -408,7 +408,7 @@
     }
     .why-work-grid {
         grid-template-columns: 1fr;
-        gap: 32px;
+        gap: 60px;
     }
     .why-work-item,
     .why-work-item:first-child,
@@ -419,7 +419,7 @@
     .why-work-item:not(:last-child)::after {
         top: auto;
         right: auto;
-        bottom: -17px;
+        bottom: -30px;
         left: 10%;
         
         width: 80%;
