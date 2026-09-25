@@ -86,10 +86,8 @@
         filter 0.3s ease;
 }
 
-.about-me-link span {
-    color: #c765e7;
-    font-size: 10px;
-    transition: transform 0.3s ease;
+.about-me-link:hover img {
+    transform: rotate(-30deg);
 }
 
 .about-me-link:hover {
