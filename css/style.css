@@ -331,7 +331,7 @@
     right: 0;
     width: 1px;
     height: 100%;
-    background: rgba(255, 255, 255, 0.08);
+    background: var(--color-border);
 }
 
 /*  ICON  */
