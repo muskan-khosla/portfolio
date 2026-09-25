@@ -4,7 +4,7 @@
 
 .about-me-section {
     position: relative;
-    padding: 65px 0 70px;
+    padding: 100px 0;
     background: #061426;
     overflow: hidden;
 }
@@ -13,8 +13,7 @@
     display: grid;
     grid-template-columns: 0.95fr 1.05fr;
     align-items: center;
-    gap: 70px;
-    max-width: 1000px;
+    gap: 40px;
     margin: 0 auto;
 }
 
