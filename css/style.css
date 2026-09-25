@@ -28,7 +28,7 @@
 .section-heading {
     margin: 0;
     color: var(--color-white);
-    font-size: clamp(27px, 3vw, 56px);
+    font-size: clamp(27px, 5vw, 56px);
     font-weight: 700;
     line-height: 1.2;
 }
