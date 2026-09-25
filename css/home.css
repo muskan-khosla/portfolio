@@ -5,7 +5,7 @@
 .about-me-section {
     position: relative;
     padding: 100px 0;
-    background: #061426;
+    background: var(--color-bg-secondary);
     overflow: hidden;
 }
 
@@ -28,8 +28,6 @@
     position: relative;
     z-index: 3;
     display: block;
-    /* width: 265px; */
-    /* height: 285px; */
     object-fit: contain;
     object-position: center bottom;
 }
@@ -75,17 +73,7 @@
     line-height: 1.4;
 }
 
-.about-point-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: #a85de7;
-    font-size: 8px;
-}
-
-/* -----------------------------------------
-   BUTTON
------------------------------------------ */
+/*  BUTTON */
 
 .about-me-link {
     display: inline-flex;
@@ -97,7 +85,7 @@
     border-radius: 50px;
     color: #ffffff;
     background: transparent;
-    font-size: 8px;
+    font-size: 14px;
     font-weight: 500;
     text-decoration: none;
     transition:
