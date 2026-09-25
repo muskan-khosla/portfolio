@@ -175,7 +175,6 @@
 }
 
 .featured-projects-header {
-    max-width: 330px;
     margin: 0 0 22px;
     text-align: left;
 }
@@ -483,7 +482,6 @@
     }
 
     .featured-projects-header {
-        max-width: 450px;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
