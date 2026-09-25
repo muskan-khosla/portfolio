@@ -161,8 +161,7 @@
     display: grid;
     grid-template-columns: 0.8fr 1.2fr;
     align-items: center;
-    gap: 65px;
-    max-width: 1000px;
+    gap: 40px;
     margin: 0 auto;
 }
 
