@@ -169,12 +169,7 @@
     gap: 22px;
     box-sizing: border-box;
 }
-
-
-/* -----------------------------------------
-   PROJECT PREVIEW
------------------------------------------ */
-
+/*  PROJECT PREVIEW */
 .featured-project-preview {
     position: relative;
     width: 100%;
@@ -184,43 +179,12 @@
     background: #071426;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.28);
 }
-
-.browser-bar {
-    height: 18px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 0 8px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
-    background: #0b1728;
-}
-
-.browser-dots {
-    display: flex;
-    align-items: center;
-    gap: 3px;
-}
-
-.browser-dots span {
-    width: 3px;
-    height: 3px;
-    border-radius: 50%;
-    background: #6c7481;
-}
-
-.browser-url {
-    color: #697486;
-    font-size: 5px;
-    line-height: 1;
-}
-
 .project-preview-image {
     position: relative;
     aspect-ratio: 1.15 / 1;
     overflow: hidden;
     background: #ffffff;
 }
-
 .project-preview-image img {
     display: block;
     width: 100%;
@@ -228,16 +192,10 @@
     object-fit: cover;
     object-position: top center;
 }
-
-
-/* -----------------------------------------
-   PROJECT INFO
------------------------------------------ */
-
+/*  PROJECT INFO */
 .featured-project-info {
     align-self: center;
 }
-
 .featured-project-info h3 {
     margin: 0 0 7px;
     color: #ffffff;
@@ -245,7 +203,6 @@
     font-weight: 700;
     line-height: 1.2;
 }
-
 .featured-project-info p {
     max-width: 190px;
     margin: 0;
@@ -253,19 +210,13 @@
     font-size: 7.5px;
     line-height: 1.65;
 }
-
-
-/* -----------------------------------------
-   TECH PILLS
------------------------------------------ */
-
+/* TECH PILLS */
 .project-tech-list {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
     margin-top: 12px;
 }
-
 .project-tech-list span {
     display: inline-flex;
     align-items: center;
@@ -277,19 +228,13 @@
     font-size: 5.5px;
     line-height: 1;
 }
-
-
-/* -----------------------------------------
-   PROJECT LINKS
------------------------------------------ */
-
+/* PROJECT LINKS */
 .project-links {
     display: flex;
     align-items: center;
     gap: 13px;
     margin-top: 14px;
 }
-
 .project-links a {
     display: inline-flex;
     align-items: center;
@@ -300,20 +245,13 @@
     text-decoration: none;
     transition: color 0.3s ease;
 }
-
 .project-links a span {
     font-size: 8px;
 }
-
 .project-links a:hover {
     color: #21c7df;
 }
-
-
-/* -----------------------------------------
-   SLIDER NAVIGATION
------------------------------------------ */
-
+/*  SLIDER NAVIGATION */
 .featured-project-navigation {
     display: flex;
     align-items: center;
@@ -321,14 +259,12 @@
     gap: 7px;
     margin-top: 13px;
 }
-
 .project-counter {
     min-width: 28px;
     color: #697486;
     font-size: 6px;
     text-align: center;
 }
-
 .project-nav-button {
     width: 18px;
     height: 18px;
@@ -348,106 +284,80 @@
         border-color 0.3s ease,
         transform 0.3s ease;
 }
-
 .project-nav-button:hover {
     color: #ffffff;
     border-color: rgba(236, 104, 220, 0.65);
     background: rgba(155, 77, 232, 0.12);
     transform: translateY(-1px);
 }
-
-
-/* =========================================
-   RESPONSIVE
-========================================= */
-
+/* RESPONSIVE */
 @media (max-width: 900px) {
-
     .featured-projects-grid {
         gap: 45px;
     }
-
     .featured-project-slide {
         grid-template-columns: 1fr;
         gap: 18px;
     }
-
     .featured-project-info {
         padding-right: 35px;
     }
-
     .featured-project-navigation {
         margin-top: 14px;
     }
 }
 
-
 @media (max-width: 700px) {
-
     .featured-projects-section {
         padding: 60px 0;
     }
-
     .featured-projects-grid {
         grid-template-columns: 1fr;
         gap: 40px;
     }
-
     .featured-projects-header {
         margin-left: auto;
         margin-right: auto;
         text-align: center;
     }
-
     .featured-projects-header .section-description {
         margin-left: auto;
         margin-right: auto;
     }
-
     .featured-projects-intro {
         text-align: center;
     }
-
     .featured-projects-button {
         margin-top: 2px;
     }
-
     .featured-project-navigation {
         justify-content: center;
     }
 }
 
-
 @media (max-width: 520px) {
-
     .featured-projects-section {
         padding: 50px 0;
     }
-
     .featured-project-slide {
         grid-template-columns: 1fr;
     }
-
     .featured-project-preview {
         max-width: 320px;
         margin: 0 auto;
     }
-
     .featured-project-info {
         padding-right: 0;
         text-align: center;
     }
-
     .featured-project-info p {
         margin-left: auto;
         margin-right: auto;
     }
-
     .project-tech-list,
     .project-links {
         justify-content: center;
     }
-
     .featured-project-navigation {
         margin-top: 15px;
     }
