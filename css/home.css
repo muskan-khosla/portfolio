@@ -1,3 +1,218 @@
+/* =========================================
+   MY TOOLKIT
+========================================= */
+
+.toolkit-section {
+    position: relative;
+    padding: 100px 0;
+    background: var(--color-bg-secondary);
+    overflow: hidden;
+}
+
+
+/* -----------------------------------------
+   SECTION HEADER
+----------------------------------------- */
+
+.toolkit-header {
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.toolkit-header .section-heading {
+    margin-top: 16px;
+}
+
+.toolkit-header .section-description {
+    max-width: 600px;
+}
+
+
+/* -----------------------------------------
+   TOOLKIT GRID
+----------------------------------------- */
+
+.toolkit-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+/* -----------------------------------------
+   TOOLKIT ITEM
+----------------------------------------- */
+
+.toolkit-item {
+    min-height: 115px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 15px;
+    border-right: 1px solid rgba(71, 117, 168, 0.22);
+    border-bottom: 1px solid rgba(71, 117, 168, 0.22);
+    background: rgba(7, 20, 38, 0.35);
+    transition:
+        background var(--transition-normal),
+        transform var(--transition-normal);
+}
+
+
+/* Remove right border from every 4th item */
+
+.toolkit-item:nth-child(4n) {
+    border-right: none;
+}
+
+
+/* Remove bottom border from last row */
+
+.toolkit-item:nth-child(n + 13) {
+    border-bottom: none;
+}
+
+
+/* -----------------------------------------
+   TOOLKIT ICON
+----------------------------------------- */
+
+.toolkit-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toolkit-icon img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.toolkit-text-icon {
+    color: var(--color-cyan);
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+
+/* -----------------------------------------
+   TOOLKIT NAME
+----------------------------------------- */
+
+.toolkit-item > span {
+    color: var(--color-text-secondary);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.3;
+    text-align: center;
+}
+
+
+/* -----------------------------------------
+   HOVER
+----------------------------------------- */
+
+.toolkit-item:hover {
+    background: rgba(144, 105, 236, 0.06);
+}
+
+.toolkit-item:hover .toolkit-icon {
+    transform: translateY(-2px);
+}
+
+.toolkit-icon {
+    transition: transform var(--transition-normal);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 992px) {
+
+    .toolkit-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .toolkit-item {
+        min-height: 105px;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    .toolkit-section {
+        padding: 70px 0;
+    }
+
+    .toolkit-header {
+        margin-bottom: 35px;
+    }
+
+    .toolkit-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .toolkit-item:nth-child(4n) {
+        border-right: 1px solid rgba(71, 117, 168, 0.22);
+    }
+
+    .toolkit-item:nth-child(2n) {
+        border-right: none;
+    }
+
+    .toolkit-item:nth-child(n + 13) {
+        border-bottom: 1px solid rgba(71, 117, 168, 0.22);
+    }
+
+    .toolkit-item:nth-last-child(-n + 2) {
+        border-bottom: none;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .toolkit-section {
+        padding: 60px 0;
+    }
+
+    .toolkit-header {
+        margin-bottom: 30px;
+    }
+
+    .toolkit-item {
+        min-height: 100px;
+        padding: 18px 10px;
+    }
+
+    .toolkit-icon,
+    .toolkit-icon img {
+        width: 27px;
+        height: 27px;
+    }
+
+    .toolkit-item > span {
+        font-size: 11px;
+    }
+
+    .toolkit-text-icon {
+        font-size: 24px;
+    }
+}
+
+
 
 
 /* =========================================
