@@ -154,8 +154,6 @@ a.hero-button.border-btn {
 .hero-visual {
     position: relative;
 
-    min-height: 430px;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -309,9 +307,6 @@ a.hero-button.border-btn {
         font-size: 44px;
     }
 
-    .hero-photo-area {
-        transform: scale(0.9);
-    }
 
     .hero-toolkit {
         right: -5px;
@@ -376,15 +371,6 @@ a.hero-button.border-btn {
         justify-content: center;
         gap: 14px 20px;
     }
-
-    .hero-visual {
-        min-height: 380px;
-    }
-
-    .hero-photo-area {
-        transform: scale(0.85);
-    }
-
     .hero-handwritten {
         left: calc(50% - 170px);
     }
@@ -464,13 +450,8 @@ a.hero-button.border-btn {
         font-size: 9px;
     }
 
-    .hero-visual {
-        min-height: 330px;
-    }
 
-    .hero-photo-area {
-        transform: scale(0.7);
-    }
+
 
     .hero-handwritten {
         top: 0;
