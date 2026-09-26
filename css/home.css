@@ -82,10 +82,16 @@
 
 .about-me-link img {
     width: 20px;
+    transition: var(--transition-normal);
 }
 .about-me-link:hover {
     transform: translateY(-1px);
     background: var(--gradient-primary);
+}
+.about-me-link:hover img {
+    position: relative;
+    left: 5px;
+    transition: all 0.7s ease;
 }
 
 /*  RESPONSIVE  */
