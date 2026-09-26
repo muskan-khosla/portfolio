@@ -776,10 +776,6 @@ a.hero-button.border-btn {
         min-height: 100px;
         padding: 18px 10px;
     }
-    .toolkit-icon, .toolkit-icon img {
-        width: 27px;
-        height: 27px;
-    }
     .toolkit-item > span {
         font-size: 11px;
     }

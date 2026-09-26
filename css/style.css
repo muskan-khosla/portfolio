@@ -176,6 +176,9 @@
     .section-description {
         font-size: 15px;
     }
+    .border-btn, .gradiant-btn {
+        width: 100%;
+    }
 }
 
 
