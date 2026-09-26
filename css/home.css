@@ -199,15 +199,14 @@
 .featured-project-info h3 {
     margin: 0 0 7px;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 1.2;
 }
 .featured-project-info p {
-    max-width: 190px;
     margin: 0;
     color: #7f8999;
-    font-size: 7.5px;
+    font-size: 16px;
     line-height: 1.65;
 }
 /* TECH PILLS */
