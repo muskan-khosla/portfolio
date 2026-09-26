@@ -765,12 +765,11 @@
         letter-spacing: -0.4px;
     }
     .cta-content p {
-        font-size: 10px;
+        font-size: 15px;
         line-height: 1.65;
     }
     .cta-button {
         padding: 8px 14px;
-        font-size: 8px;
     }
     .cta-buttons a {
         width: 100%;
