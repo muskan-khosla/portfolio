@@ -119,14 +119,12 @@
 /* =========================================
    FEATURED PROJECTS SECTION
 ========================================= */
-
 .featured-projects-section {
     position: relative;
     padding: 70px 0;
     background: #02080f;
     overflow: hidden;
 }
-
 .featured-projects-grid {
     display: grid;
     grid-template-columns: 0.8fr 1.2fr;
@@ -135,15 +133,10 @@
     margin: 0 auto;
 }
 
-
-/* -----------------------------------------
-   LEFT CONTENT
------------------------------------------ */
-
+/* LEFT CONTENT */
 .featured-projects-intro {
     position: relative;
 }
-
 .featured-projects-header {
     margin: 0 0 22px;
     text-align: left;
@@ -151,31 +144,22 @@
 .featured-projects-header .section-description {
     max-width: 100%;
 }
-
-
-
-/* =========================================
-   PROJECT SLIDER
-========================================= */
-
+/* PROJECT SLIDER*/
 .featured-project-slider {
     position: relative;
     width: 100%;
     min-width: 0;
 }
-
 .featured-project-viewport {
     width: 100%;
     overflow: hidden;
 }
-
 .featured-project-track {
     display: flex;
     width: 100%;
     transition: transform 0.5s ease;
     will-change: transform;
 }
-
 .featured-project-slide {
     flex: 0 0 100%;
     min-width: 100%;
