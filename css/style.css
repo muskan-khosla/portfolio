@@ -628,7 +628,7 @@
     color: var(--color-text-primary);
     font-size: clamp(25px, 3vw, 35px);
     font-weight: 700;
-    line-height: 1.15;
+    line-height: 1.4;
 }
 .cta-content h2 span {
     color: var(--color-text-primary);
@@ -706,9 +706,6 @@
         font-size: 22px;
         line-height: 28px;
     }
-    .cta-content h2 {
-        font-size: 27px;
-    }
     .cta-arrow {
         left: -45px;
         top: -32px;
@@ -759,10 +756,6 @@
     .cta-box {
         padding: 28px 20px;
         border-radius: 10px;
-    }
-    .cta-content h2 {
-        font-size: 23px;
-        letter-spacing: -0.4px;
     }
     .cta-content p {
         font-size: 15px;
@@ -919,11 +912,9 @@
         gap: 12px 17px;
         margin: 0 0 40px;
     }
+
     .footer-logo img {
         width: 95px;
-    }
-    .footer-socials {
-        gap: 15px;
     }
     .footer-copyright,
     .footer-specialties {
