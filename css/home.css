@@ -190,14 +190,18 @@ a.hero-button.border-btn {
     line-height: 1.35;
 }
 
-
+@media (max-width: 1045px) { 
+.hero-grid {
+        gap: 25px;
+    }
+}
 /*  TABLET */
 @media (max-width: 992px) {
     .hero-section {
         padding: 55px 0 40px;
     }
     .hero-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 25px;
     }
     .hero-title {
@@ -213,6 +217,9 @@ a.hero-button.border-btn {
     }
     .counter-item {
         padding: 0 12px;
+    }
+    .hero-visual {
+        flex-direction: column;
     }
     .hero-toolkit {
         width: 100%;
