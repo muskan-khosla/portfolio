@@ -1,14 +1,12 @@
 /* =========================================
    HERO SECTION
 ========================================= */
-
 .hero-section {
     position: relative;
-    padding: 65px 0 45px;
+    padding: 100px 0;
     background: var(--color-bg-primary);
     overflow: hidden;
 }
-
 .hero-grid {
     display: grid;
     grid-template-columns: 0.95fr 1.05fr;
@@ -16,7 +14,6 @@
     gap: 45px;
     min-height: 430px;
 }
-
 
 /* =========================================
    HERO CONTENT
