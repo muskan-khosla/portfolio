@@ -208,9 +208,7 @@ a.hero-button.border-btn {
         font-size: 44px;
     }
     .hero-toolkit {
-        right: -5px;
-        transform: scale(0.9);
-        transform-origin: right center;
+        margin-top: 20px;
     }
     .counter-box {
         padding: 10px 15px;
