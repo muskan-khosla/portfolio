@@ -232,7 +232,7 @@
     display: flex;
     align-items: center;
     gap: 13px;
-    margin-top: 14px;
+    margin-top: 35px;
 }
 .project-links a {
     display: inline-flex;
