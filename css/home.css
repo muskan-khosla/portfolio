@@ -76,6 +76,17 @@
     object-fit: cover;
     object-position: top center;
 }
+span.project-category {
+    position: absolute;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 5px 25px;
+    background: #000;
+    border-radius: 50px;
+    bottom: 15px;
+    left: 15px;
+}
 /*  PROJECT INFO */
 .featured-project-info {
     align-self: center;
