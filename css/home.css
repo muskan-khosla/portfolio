@@ -37,7 +37,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px 20px;
-    max-width: 1000px;
+    /* max-width: 1000px; */
     margin: 0 auto;
 }
 
@@ -94,13 +94,12 @@
 
     color: var(--color-white);
 
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 600;
     line-height: 1.35;
 }
 
 .service-card p {
-    max-width: 280px;
 
     margin: 0;
 
