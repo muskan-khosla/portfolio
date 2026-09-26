@@ -82,15 +82,11 @@
 ========================================= */
 
 .hero-description {
-    max-width: 550px;
-
     margin-top: 20px;
-
     color: var(--color-text-secondary);
-
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 1.75;
+    line-height: 28px;
 }
 
 
