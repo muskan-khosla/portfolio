@@ -934,7 +934,7 @@ span.project-category {
     align-items: center;
     justify-content: flex-end;
     gap: 20px;
-    margin-top: 13px;
+    margin-top: 40px;
 }
 .project-counter {
     min-width: 28px;
@@ -961,7 +961,7 @@ span.project-category {
         padding-right: 35px;
     }
     .featured-project-navigation {
-        margin-top: 14px;
+        margin-top: 50px;
     }
 }
 
@@ -1001,7 +1001,7 @@ span.project-category {
         grid-template-columns: 1fr;
     }
     .featured-project-preview {
-        margin: 0 auto;
+        margin: 0 auto 15px;
     }
     .featured-project-info {
         padding-right: 0;
@@ -1016,7 +1016,7 @@ span.project-category {
         justify-content: center;
     }
     .featured-project-navigation {
-        margin-top: 15px;
+        margin-top: 50px;
     }
 }
 
