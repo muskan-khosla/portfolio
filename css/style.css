@@ -119,17 +119,18 @@
     margin-top: 42px;
 }
 .gradiant-btn {
+    position: relative;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 9px;
+    gap: 7px;
     min-height: 44px;
-    padding: 0 23px;
+    padding: 6px 30px;
     border-radius: var(--radius-pill);
     color: var(--color-white);
     background: var(--gradient-cta);
-    font-size: 13px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 500;
     box-shadow:
         0 8px 25px rgba(144, 105, 236, 0.15);
     transition:

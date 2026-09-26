@@ -101,29 +101,6 @@
 
     margin-top: 23px;
 }
-
-.hero-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 9px;
-
-    min-height: 42px;
-    padding: 0 20px;
-
-    border-radius: var(--radius-pill);
-
-    font-size: 11px;
-    font-weight: 600;
-
-    transition:
-        transform var(--transition-normal),
-        box-shadow var(--transition-normal);
-}
-
-.hero-button:hover {
-    transform: translateY(-2px);
-}
 a.hero-button.border-btn {
     margin: 0;
 }
