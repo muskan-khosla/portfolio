@@ -125,54 +125,6 @@
     transform: translateY(-2px);
 }
 
-.hero-button-primary {
-    color: var(--color-white);
-    background: var(--gradient-primary);
-
-    box-shadow:
-        0 8px 25px rgba(155, 77, 232, 0.2);
-}
-
-.hero-button-primary:hover {
-    box-shadow:
-        0 12px 30px rgba(155, 77, 232, 0.35);
-}
-
-.hero-button-outline {
-    position: relative;
-
-    color: var(--color-white);
-
-    background: transparent;
-
-    isolation: isolate;
-}
-
-.hero-button-outline::before {
-    content: "";
-
-    position: absolute;
-    inset: 0;
-
-    padding: 1px;
-
-    border-radius: inherit;
-
-    background: var(--gradient-primary);
-
-    -webkit-mask:
-        linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-
-    mask:
-        linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-
-    pointer-events: none;
-}
 
 
 /* =========================================
@@ -829,42 +781,7 @@
         0 15px 35px rgba(0, 0, 0, 0.18);
 }
 
-/*  VIEW ALL SERVICES BUTTON */
-.services-button-wrap {
-    display: flex;
-    justify-content: center;
-    margin-top: 42px;
-}
-.services-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 9px;
-    min-height: 44px;
-    padding: 0 23px;
-    border-radius: var(--radius-pill);
-    color: var(--color-white);
-    background: var(--gradient-cta);
-    font-size: 13px;
-    font-weight: 600;
-    box-shadow:
-        0 8px 25px rgba(144, 105, 236, 0.15);
-    transition:
-        transform var(--transition-normal),
-        box-shadow var(--transition-normal);
-}
-.services-button span {
-    font-size: 15px;
-    transition: transform var(--transition-normal);
-}
-.services-button:hover {
-    transform: translateY(-2px);
-    box-shadow:
-        0 12px 30px rgba(144, 105, 236, 0.3);
-}
-.services-button:hover span {
-    transform: translateX(3px);
-}
+
 
 /*  RESPONSIVE — TABLET */
 @media (max-width: 992px) {

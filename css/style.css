@@ -113,6 +113,43 @@
     transition: all 0.7s ease;
 }
 
+.gradiant-btn-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 42px;
+}
+.gradiant-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    min-height: 44px;
+    padding: 0 23px;
+    border-radius: var(--radius-pill);
+    color: var(--color-white);
+    background: var(--gradient-cta);
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow:
+        0 8px 25px rgba(144, 105, 236, 0.15);
+    transition:
+        transform var(--transition-normal),
+        box-shadow var(--transition-normal);
+}
+.gradiant-btn span {
+    font-size: 15px;
+    transition: transform var(--transition-normal);
+}
+.gradiant-btn:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 12px 30px rgba(144, 105, 236, 0.3);
+}
+.gradiant-btn:hover span {
+    transform: translateX(3px);
+}
+
+
 /*  RESPONSIVE  */
 @media (max-width: 700px) {
     .section-header {
