@@ -1,41 +1,27 @@
 /* =========================================
    MY TOOLKIT
 ========================================= */
-
 .toolkit-section {
     position: relative;
     padding: 100px 0;
     background: var(--color-bg-secondary);
     overflow: hidden;
 }
-
-
-/* -----------------------------------------
-   SECTION HEADER
------------------------------------------ */
-
+/*  SECTION HEADER  */
 .toolkit-header {
     margin: 0 auto 45px;
     text-align: center;
 }
-
 .toolkit-header .section-heading {
     margin-top: 16px;
 }
-
 .toolkit-header .section-description {
     max-width: 600px;
 }
-
-
-/* -----------------------------------------
-   TOOLKIT GRID
------------------------------------------ */
-
+/*  TOOLKIT GRID */
 .toolkit-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    max-width: 1000px;
     margin: 0 auto;
     border: 1px solid var(--color-border);
     border-radius: 10px;
