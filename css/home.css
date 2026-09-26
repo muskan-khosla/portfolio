@@ -433,21 +433,21 @@ a.hero-button.border-btn {
     }
 
     .hero-title {
-        font-size: 34px;
+        font-size: 36px;
     }
-
     .hero-description {
-        font-size: 12px;
+        font-size: 15px;
+        max-width: 100%;
     }
 
     .hero-button {
         min-height: 40px;
         padding-inline: 17px;
-        font-size: 10px;
+        font-size: 14px;
     }
 
     .hero-points > span {
-        font-size: 9px;
+        font-size: 14px;
     }
 
 
@@ -598,11 +598,11 @@ a.hero-button.border-btn {
         margin-bottom: 18px;
     }
     .service-card h3 {
-        font-size: 17px;
+        font-size: 18px;
     }
     .service-card p {
         max-width: 100%;
-        font-size: 13px;
+        font-size: 14px;
     }
     .services-button-wrap {
         margin-top: 32px;
@@ -623,15 +623,15 @@ a.hero-button.border-btn {
         height: 40px;
     }
     .service-card h3 {
-        font-size: 16px;
+        font-size: 18px;
     }
     .service-card p {
-        font-size: 12px;
+        font-size: 14px;
     }
     .services-button {
         min-height: 42px;
         padding-inline: 20px;
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
