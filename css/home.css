@@ -6,7 +6,6 @@
     padding: 100px 0;
     background: var(--color-bg-primary);
     overflow: hidden;
-    min-height: 100vh;
 }
 .hero-grid {
     display: grid;
@@ -169,7 +168,7 @@ a.hero-button.border-btn {
 
 .hero-toolkit {
 
-    width: 88px;
+    width: 200px;
 
     padding: 17px 0;
 
