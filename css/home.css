@@ -390,8 +390,7 @@ a.hero-button.border-btn {
     }
 
     .hero-toolkit {
-        right: 5px;
-        transform: scale(0.8);
+        display: none;
     }
 
 
@@ -576,6 +575,11 @@ a.hero-button.border-btn {
     border-color: rgba(144, 105, 236, 0.55);
     box-shadow:
         0 15px 35px rgba(0, 0, 0, 0.18);
+}
+.services-button-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
 }
 
 
