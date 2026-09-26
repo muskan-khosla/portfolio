@@ -263,7 +263,7 @@ a.hero-button.border-btn {
 
     background: rgba(144, 105, 236, 0.04);
 
-    font-size: 19px;
+    padding: 8px;
 }
 
 .counter-content {
@@ -405,19 +405,19 @@ a.hero-button.border-btn {
         border-bottom: 1px solid rgba(71, 117, 168, 0.25);
     }
 
-    .counter-icon {
+    /* .counter-icon {
         width: 38px;
         height: 38px;
         flex-basis: 38px;
         font-size: 16px;
-    }
+    } */
 
     .counter-value {
-        font-size: 13px;
+        font-size: 16px;
     }
 
     .counter-label {
-        font-size: 9px;
+        font-size: 14px;
     }
 }
 
