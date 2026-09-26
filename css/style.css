@@ -98,6 +98,7 @@
     transition:
         transform 0.3s ease,
         filter 0.3s ease;
+    min-height: 44px;
 }
 .border-btn img {
     width: 20px;
