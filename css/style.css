@@ -1011,7 +1011,7 @@
 
     margin: 4px auto 0;
 
-    background: var(--gradient-primary);
+    background: url(/assets/icons/Underline.svg);
 
     transform: rotate(-3deg);
 }
