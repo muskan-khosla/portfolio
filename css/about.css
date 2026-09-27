@@ -21,29 +21,12 @@
    LEFT VISUAL
 ========================================================= */
 
-.my-story-visual {
-    position: relative;
-    min-height: 290px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 /* Portrait */
-
-.my-story-image-wrap {
-    position: relative;
-    z-index: 4;
-    width: 225px;
-    height: 225px;
-    border-radius: 50%;
-    overflow: hidden;
-}
 
 .my-story-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 
@@ -137,10 +120,10 @@
     max-width: 610px;
 }
 
-.my-story-content .section-badge {
+/* .my-story-content .section-badge {
     font-size: 9px;
     padding: 5px 13px;
-}
+} */
 
 .my-story-heading {
     margin-top: 13px;
