@@ -532,6 +532,13 @@
     line-height: 1;
     display: block;
 }
+.approach-step-number span::before {
+    display: inline-block;
+    content: '';
+    width: 55px;
+    height: 22px;
+    background: url(/assets/icons/spark.svg);
+}
 .approach-step-number > span:last-child {
     background: var(--gradient-heading);
     -webkit-background-clip: text;
