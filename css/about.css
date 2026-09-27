@@ -552,17 +552,16 @@
 .approach-step h3 {
     margin-top: 22px;
     color: var(--color-white);
-    font-size: 14px;
+    font-size: 24px;
     font-weight: 600;
     line-height: 1.4;
 }
 
 /*  STEP DESCRIPTION  */
 .approach-step p {
-    /* max-width: 190px; */
     margin: 10px auto 0;
     color: var(--color-text-secondary);
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.7;
 }
 
