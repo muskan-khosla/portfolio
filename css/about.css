@@ -602,7 +602,6 @@
         font-size: 20px;
     }
     .approach-step p {
-        max-width: 150px;
         font-size: 14px;
     }
     .approach-arrow {
@@ -632,7 +631,6 @@
         font-size: 20px;
     }
     .approach-step p {
-        max-width: 220px;
         font-size: 14px;
     }
 }
