@@ -12,9 +12,7 @@
     align-items: start;
 }
 
-/* =========================================================
-   FORM CARD
-========================================================= */
+/* FORM CARD */
 .contact-form-card {
     padding: 38px 36px 36px;
     background: var(--color-bg-secondary);
@@ -31,9 +29,7 @@
     line-height: 1.3;
 }
 
-/* =========================================================
-   FORM
-========================================================= */
+/*  FORM  */
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -59,9 +55,7 @@
     color: var(--color-white);
 }
 
-/* =========================================================
-   INPUTS
-========================================================= */
+/*  INPUTS  */
 .contact-field input,
 .contact-field select,
 .contact-field textarea {
@@ -101,9 +95,7 @@
         0 0 0 3px rgba(144, 105, 236, 0.08);
 }
 
-/* =========================================================
-   SELECT
-========================================================= */
+/*  SELECT */
 .contact-field select {
     appearance: none;
     cursor: pointer;
@@ -132,9 +124,7 @@
     color: #ffffff;
 }
 
-/* =========================================================
-   SUBMIT BUTTON
-========================================================= */
+/*  SUBMIT BUTTON  */
 .contact-submit-button {
     display: flex;
     align-items: center;
@@ -171,18 +161,14 @@
     line-height: 1;
 }
 
-/* =========================================================
-   CONTACT INFORMATION
-========================================================= */
+/*  CONTACT INFORMATION  */
 .contact-info-list {
     display: flex;
     flex-direction: column;
     gap: 18px;
 }
 
-/* =========================================================
-   INFORMATION CARD
-========================================================= */
+/*  INFORMATION CARD */
 .contact-info-card {
     display: flex;
     align-items: flex-start;
@@ -205,9 +191,7 @@
     transform: translateY(-2px);
 }
 
-/* =========================================================
-   AVAILABLE CARD
-========================================================= */
+/*  AVAILABLE CARD */
 .contact-available-card {
     background: var(--color-bg-secondary);
 }
@@ -229,9 +213,7 @@
         0 0 12px rgba(26, 238, 215, 0.55);
 }
 
-/* =========================================================
-   INFORMATION ICON
-========================================================= */
+/*  INFORMATION ICON */
 .contact-info-icon {
     display: flex;
     align-items: center;
@@ -249,9 +231,7 @@
     height: 17px;
 }
 
-/* =========================================================
-   INFORMATION CONTENT
-========================================================= */
+/*  INFORMATION CONTENT */
 .contact-info-content {
     min-width: 0;
 }
@@ -278,9 +258,7 @@
     font-size: 16px;
 }
 
-/* =========================================================
-   RESPONSIVE
-========================================================= */
+/*  RESPONSIVE */
 @media (max-width: 992px) {
     .contact-form-layout {
         grid-template-columns: 1fr;
@@ -293,7 +271,6 @@
 }
 
 @media (max-width: 767px) {
-
     .contact-form-section {
         padding: 20px 0 70px;
     }
