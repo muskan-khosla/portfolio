@@ -116,32 +116,12 @@
    STORY CONTENT
 ========================================================= */
 
-.my-story-content {
-    max-width: 610px;
-}
-
-/* .my-story-content .section-badge {
-    font-size: 9px;
-    padding: 5px 13px;
-} */
-/* 
-.my-story-heading {
-    margin-top: 13px;
-    color: var(--color-white);
-    font-size: clamp(30px, 3.2vw, 42px);
-    font-weight: 700;
-    line-height: 1.12;
-    letter-spacing: -0.8px;
-} */
-
 .my-story-text {
     margin-top: 18px;
 }
 
 .my-story-text p {
     color: var(--color-text-secondary);
-    font-size: 11px;
-    line-height: 1.75;
 }
 
 .my-story-text p + p {
@@ -155,21 +135,15 @@
 
 .my-story-signature {
     margin-top: 17px;
-    color: #d968e5;
     font-family: "Caveat", cursive;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 700;
     line-height: 1.2;
-    transform: rotate(-2deg);
+    background: var(--gradient-heading);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
-.my-story-signature span {
-    display: inline-block;
-    margin-left: 3px;
-    font-family: inherit;
-    transform: rotate(5deg);
-}
-
 
 /* =========================================================
    TABLET
