@@ -525,15 +525,12 @@
     text-align: center;
 }
 .approach-step-number span {
-    /* position: relative; */
-    /* display: inline-flex; */
-    /* align-items: center; */
     color: var(--color-white);
     font-family: "Caveat";
     font-size: 75px;
     font-weight: 700;
     line-height: 1;
-    width: auto;
+    display: block;
 }
 .approach-step-number > span:last-child {
     background: var(--gradient-heading);
