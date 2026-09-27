@@ -935,6 +935,9 @@
     padding: 42px 0 48px;
     background: var(--color-bg-primary);
     overflow: hidden;
+    height: 100%;
+    min-height: 400px;
+    align-content: center;
 }
 
 
@@ -955,12 +958,14 @@
     left: -130px;
     top: 45px;
     background: #7C3AED;
+    opacity: 0.20;
 }
 
 .page-hero-glow-right {
     right: -120px;
     top: 20px;
-    background: rgba(26, 238, 215, 0.10);
+    background: #1AEED7;
+    opacity: 0.20;
 }
 
 
