@@ -929,7 +929,6 @@
 /* =========================================================
    GLOBAL PAGE HERO
 ========================================================= */
-
 .page-hero {
     position: relative;
     padding: 100px 0 ;
@@ -940,11 +939,7 @@
     align-content: center;
 }
 
-
-/* =========================================================
-   BACKGROUND GLOWS
-========================================================= */
-
+/*  BACKGROUND GLOWS  */
 .page-hero-glow {
     position: absolute;
     width: 280px;
@@ -953,14 +948,12 @@
     filter: blur(100px);
     pointer-events: none;
 }
-
 .page-hero-glow-left {
     left: -130px;
     top: 45px;
     background: #7C3AED;
     opacity: 0.20;
 }
-
 .page-hero-glow-right {
     right: -120px;
     top: 20px;
@@ -968,26 +961,16 @@
     opacity: 0.20;
 }
 
-
-/* =========================================================
-   HERO CONTENT
-========================================================= */
-
+/*  HERO CONTENT */
 .page-hero-content {
     position: relative;
     z-index: 2;
-
     max-width: 850px;
     margin: 0 auto;
-
     text-align: center;
 }
 
-
-/* =========================================================
-   HANDWRITTEN TEXT
-========================================================= */
-
+/* HANDWRITTEN TEXT  */
 .page-hero-script {
     display: inline-block;
     color: var(--color-white);
@@ -1010,27 +993,17 @@
     transform: rotate(7deg);
 }
 
-
-/* =========================================================
-   TITLE
-========================================================= */
-
+/*  TITLE  */
 .page-hero-title {
     margin-top: 13px;
-
     color: var(--color-white);
-
     font-size: clamp(42px, 5vw, 56px);
     font-weight: 700;
     line-height: 1.15;
     letter-spacing: -1px;
 }
 
-
-/* =========================================================
-   ROLE
-========================================================= */
-
+/* ROLE  */
 .page-hero-role {
     margin-top: 7px;
     color: var(--color-white);
@@ -1039,11 +1012,7 @@
     line-height: 1.5;
 }
 
-
-/* =========================================================
-   DESCRIPTION
-========================================================= */
-
+/*  DESCRIPTION */
 .page-hero-description {
     margin: 10px auto 0;
     color: var(--color-text-secondary);
@@ -1052,128 +1021,91 @@
     line-height: 1.75;
 }
 
-
-/* =========================================================
-   ACTIONS
-========================================================= */
-
+/*  ACTIONS  */
 .page-hero-actions {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 9px;
-
     margin-top: 30px;
 }
-
 a.page-hero-button.page-hero-button-outline {
     margin: 0;
 }
 
-
-
-
-/* =========================================================
-   SOCIALS
-========================================================= */
-
+/*  SOCIALS  */
 .page-hero-socials {
     display: flex;
     align-items: center;
     gap: 15px;
-
     margin-left: 4px;
 }
-
 .page-hero-social {
     display: flex;
     align-items: center;
     justify-content: center;
-
     width: 30px;
     height: 30px;
-
     color: var(--color-white);
-
     transition:
         color var(--transition-fast),
         transform var(--transition-fast);
 }
-
 .page-hero-social svg {
     width: 22px;
     height: 22px;
-
     fill: currentColor;
 }
-
 .page-hero-social:hover {
     color: var(--color-cyan);
     transform: translateY(-2px);
 }
 
 
-
-/* =========================================================
-   RESPONSIVE
-========================================================= */
-
+/* RESPONSIVE */
 @media (max-width: 767px) {
-
     .page-hero {
         padding: 50px 0;
     }
-
     .page-hero-content {
         max-width: 600px;
     }
-
     .page-hero-title {
         font-size: 38px;
     }
-
     .page-hero-description {
         max-width: 520px;
         font-size: 14px;
     }
 }
 
-
 @media (max-width: 480px) {
-
     .page-hero {
         padding: 50px 0;
     }
-
     .page-hero-script {
         font-size: 25px;
     }
-
     .page-hero-title {
         margin-top: 11px;
         font-size: 31px;
         letter-spacing: -0.7px;
     }
-
     .page-hero-role {
         font-size: 14px;
     }
-
     .page-hero-description {
         font-size: 14px;
         line-height: 1.7;
     }
-
     .page-hero-actions {
         flex-wrap: wrap;
         gap: 9px;
     }
-
     .page-hero-button {
         min-height: 34px;
         padding-inline: 14px;
     }
-
     .page-hero-socials {
         width: 100%;
         justify-content: center;
