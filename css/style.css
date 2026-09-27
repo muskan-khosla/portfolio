@@ -1121,7 +1121,7 @@ a.page-hero-button.page-hero-button-outline {
 @media (max-width: 767px) {
 
     .page-hero {
-        padding: 38px 0 42px;
+        padding: 50px 0;
     }
 
     .page-hero-content {
@@ -1134,7 +1134,7 @@ a.page-hero-button.page-hero-button-outline {
 
     .page-hero-description {
         max-width: 520px;
-        font-size: 11px;
+        font-size: 14px;
     }
 }
 
@@ -1142,11 +1142,11 @@ a.page-hero-button.page-hero-button-outline {
 @media (max-width: 480px) {
 
     .page-hero {
-        padding: 32px 0 38px;
+        padding: 50px 0;
     }
 
     .page-hero-script {
-        font-size: 16px;
+        font-size: 25px;
     }
 
     .page-hero-title {
@@ -1156,11 +1156,11 @@ a.page-hero-button.page-hero-button-outline {
     }
 
     .page-hero-role {
-        font-size: 10px;
+        font-size: 14px;
     }
 
     .page-hero-description {
-        font-size: 10px;
+        font-size: 14px;
         line-height: 1.7;
     }
 
