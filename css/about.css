@@ -536,8 +536,13 @@
     display: inline-block;
     content: '';
     width: 55px;
-    height: 22px;
+    height: 55px;
     background: url(/assets/icons/spark.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: -13px 0 0 -20px;
 }
 .approach-step-number > span:last-child {
     background: var(--gradient-heading);
@@ -546,13 +551,6 @@
     -webkit-text-fill-color: transparent;
     color: transparent;
 }
-.approach-step-number img {
-    width: 55px;
-    position: absolute;
-    top: -11px;
-    left: -22px;
-}
-
 /*   STEP TITLE */
 .approach-step h3 {
     margin-top: 22px;
