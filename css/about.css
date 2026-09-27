@@ -53,32 +53,18 @@
 }
 
 
-/* =========================================================
-   MOBILE
-========================================================= */
-
+/*  MOBILE  */
 @media (max-width: 767px) {
-
     .my-story-section {
         padding: 65px 0;
     }
-
     .my-story-grid {
         grid-template-columns: 1fr;
         gap: 45px;
     }
-
-    .my-story-visual {
-        min-height: 270px;
-    }
-
     .my-story-content {
         max-width: 100%;
         text-align: center;
-    }
-
-    .my-story-heading {
-        font-size: 32px;
     }
 
     .my-story-text {
@@ -86,11 +72,11 @@
     }
 
     .my-story-text p {
-        font-size: 11px;
+        font-size: 15px;
     }
 
     .my-story-signature {
-        font-size: 15px;
+        font-size: 18px;
     }
 }
 
