@@ -650,3 +650,13 @@
     }
 
 }
+
+
+
+
+section.why-work-section {
+    background-color: var(--color-bg-secondary);
+}
+.cta-section  {
+    padding: 50px 0 0px;
+}
