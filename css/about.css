@@ -74,6 +74,7 @@
     }
     .my-story-signature {
         font-size: 18px;
+        justify-content: center;
     }
 }
 
