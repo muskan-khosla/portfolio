@@ -560,159 +560,112 @@
     line-height: 1.7;
 }
 
-
-/* =========================================================
-   ARROWS
-========================================================= */
-
+/* ARROWS  */
 .approach-arrow {
     display: flex;
     align-items: center;
     gap: 2px;
-
     margin-top: 7px;
-
     color: var(--color-white);
-
     font-size: 22px;
     line-height: 1;
 }
-
 .approach-arrow span:first-child {
     color: var(--color-text-secondary);
     font-size: 13px;
     letter-spacing: 1px;
 }
-
 .approach-arrow span:last-child {
     font-size: 27px;
     font-weight: 300;
 }
 
-
-/* =========================================================
-   HOVER
-========================================================= */
-
+/*  HOVER  */
 .approach-step-number {
     transition: transform var(--transition-normal);
 }
-
 .approach-step:hover .approach-step-number {
     transform: rotate(-4deg) translateY(-3px);
 }
-
 .approach-step:hover .approach-spark {
     color: var(--color-pink);
 }
 
-
-/* =========================================================
-   TABLET
-========================================================= */
-
+/*  TABLET  */
 @media (max-width: 992px) {
-
     .my-approach-section {
         padding: 75px 0 80px;
     }
-
     .my-approach-section .section-heading {
         font-size: 43px;
     }
-
     .approach-steps {
         gap: 12px;
         margin-top: 50px;
     }
-
     .approach-step-number {
         font-size: 28px;
     }
-
     .approach-step h3 {
         font-size: 13px;
     }
-
     .approach-step p {
         max-width: 150px;
         font-size: 9px;
     }
-
     .approach-arrow {
         margin-top: 5px;
     }
 }
 
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
+/*  MOBILE  */
 @media (max-width: 767px) {
-
     .my-approach-section {
         padding: 70px 0;
     }
-
     .my-approach-section .section-heading {
         font-size: 34px;
         letter-spacing: -1px;
     }
-
     .approach-steps {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 45px 25px;
         margin-top: 45px;
     }
-
     .approach-arrow {
         display: none;
     }
-
     .approach-step-number {
         font-size: 29px;
     }
-
     .approach-step h3 {
         margin-top: 18px;
         font-size: 14px;
     }
-
     .approach-step p {
         max-width: 220px;
         font-size: 10px;
     }
 }
 
-
-/* =========================================================
-   SMALL MOBILE
-========================================================= */
-
+/*  SMALL MOBILE  */
 @media (max-width: 480px) {
-
     .my-approach-section {
         padding: 60px 0;
     }
-
     .my-approach-section .section-heading {
         font-size: 30px;
     }
-
     .approach-steps {
         gap: 40px 15px;
     }
-
     .approach-step-number {
         font-size: 27px;
     }
-
     .approach-step h3 {
         font-size: 13px;
     }
-
     .approach-step p {
         font-size: 9px;
         line-height: 1.65;
