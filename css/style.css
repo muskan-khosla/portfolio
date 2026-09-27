@@ -28,10 +28,10 @@
 .section-heading {
     margin: 0;
     color: var(--color-white);
-    font-size: clamp(27px, 5vw, 56px);
+    font-size: clamp(27px, 5vw, 50px);
     font-weight: 700;
     line-height: 1.2;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 /*  GRADIENT PART OF HEADING */
