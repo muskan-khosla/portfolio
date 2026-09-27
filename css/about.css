@@ -623,7 +623,7 @@
     .approach-arrow {
         display: none;
     }
-    .approach-step-number {
+    .approach-step-number span {
         font-size: 50px;
     }
     .approach-step h3 {
@@ -644,6 +644,9 @@
     .approach-steps {
         gap: 40px 15px;
         grid-template-columns: 1fr;
+    }
+    .approach-step-number span::before {
+        margin: -18px 0 0 -28px;
     }
 
 }
