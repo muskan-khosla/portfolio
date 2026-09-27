@@ -558,134 +558,94 @@
 /* =========================================================
    THANK YOU PAGE
 ========================================================= */
-
 .thankyou-page {
     position: relative;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     min-height: 100vh;
     min-height: 100svh;
-
     padding: 40px 20px;
-
     background: var(--color-bg-primary);
-
     overflow: hidden;
 }
-
 
 /* =========================================================
    BACKGROUND GLOWS
 ========================================================= */
-
 .thankyou-glow {
     position: absolute;
-
     width: 420px;
     height: 420px;
-
     border-radius: 50%;
-
     filter: blur(120px);
-
     pointer-events: none;
 }
-
 .thankyou-glow-left {
     left: -220px;
     top: 10%;
-
     background: #7C3AED;
     opacity: 0.16;
 }
-
 .thankyou-glow-right {
     right: -220px;
     bottom: 5%;
-
     background: #1AEED7;
     opacity: 0.10;
 }
 
-
 /* =========================================================
    CONTAINER
 ========================================================= */
-
 .thankyou-container {
     position: relative;
-
     z-index: 2;
-
     width: 100%;
     max-width: 720px;
-
     margin-inline: auto;
 }
-
 
 /* =========================================================
    CARD
 ========================================================= */
-
 .thankyou-card {
     position: relative;
-
     padding: 55px 50px;
-
     text-align: center;
-
     background:
         linear-gradient(
             145deg,
             rgba(7, 20, 38, 0.96),
             rgba(4, 14, 27, 0.96)
         );
-
     border: 1px solid var(--color-border);
-
     border-radius: 22px;
-
     box-shadow:
         0 25px 80px rgba(0, 0, 0, 0.30);
 }
 
-
 /* =========================================================
    SUCCESS ICON
 ========================================================= */
-
 .thankyou-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-
     width: 70px;
     height: 70px;
-
     margin: 0 auto 22px;
-
     border: 1px solid rgba(26, 238, 215, 0.28);
-
     border-radius: 50%;
-
     background:
         rgba(26, 238, 215, 0.08);
-
     color: var(--color-cyan);
-
     box-shadow:
         0 0 30px rgba(26, 238, 215, 0.08);
 }
-
 .thankyou-icon svg {
     width: 31px;
     height: 31px;
 }
-
 
 /* =========================================================
    LABEL
@@ -695,24 +655,16 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
     padding: 7px 14px;
-
     border: 1px solid rgba(144, 105, 236, 0.30);
-
     border-radius: var(--radius-pill);
-
     background:
         rgba(144, 105, 236, 0.07);
-
     color: var(--color-text-secondary);
-
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 500;
-
     line-height: 1;
 }
-
 
 /* =========================================================
    TITLE
