@@ -496,37 +496,12 @@
 /* =========================================================
    MY APPROACH
 ========================================================= */
-
 .my-approach-section {
     position: relative;
-    padding: 85px 0 90px;
+    padding: 100px 0;
     background: var(--color-bg-primary);
     overflow: hidden;
 }
-
-
-/* =========================================================
-   SECTION HEADER
-========================================================= */
-
-.my-approach-section .section-header {
-    max-width: 700px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.my-approach-section .section-badge {
-    font-size: 9px;
-    padding: 6px 14px;
-}
-
-.my-approach-section .section-heading {
-    margin-top: 20px;
-    font-size: clamp(38px, 4.2vw, 54px);
-    line-height: 1.15;
-    letter-spacing: -1.5px;
-}
-
 
 /* =========================================================
    APPROACH STEPS
