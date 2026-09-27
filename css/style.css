@@ -990,30 +990,24 @@
 
 .page-hero-script {
     display: inline-block;
-
     color: var(--color-white);
-
     font-family: "Caveat", cursive;
     font-size: 30px;
     font-weight: 600;
     line-height: 1;
-
     transform: rotate(-4deg);
 }
-
 .page-hero-script::after {
     content: "";
-
     display: block;
-
-    width: 55px;
-    height: 1px;
-
+    width: 100%;
+    height: 14px;
     margin: 4px auto 0;
-
     background: url(/assets/icons/Underline.svg);
-
-    transform: rotate(-3deg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(7deg);
 }
 
 
