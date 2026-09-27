@@ -533,9 +533,7 @@
     font-size: 32px;
     font-weight: 600;
     line-height: 1;
-    /* transform: rotate(-4deg); */
 }
-
 .approach-step-number > span:last-child {
     background: var(--gradient-heading);
     -webkit-background-clip: text;
@@ -544,24 +542,6 @@
     color: transparent;
 }
 
-
-/* =========================================================
-   DECORATIVE SPARK
-========================================================= */
-
-.approach-spark {
-    position: absolute;
-    left: -10px;
-    top: -8px;
-
-    color: var(--color-cyan);
-
-    font-family: "Poppins", sans-serif;
-    font-size: 13px;
-    line-height: 1;
-
-    transform: rotate(-15deg);
-}
 
 
 /* =========================================================
