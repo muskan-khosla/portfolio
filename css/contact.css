@@ -317,74 +317,53 @@
 /* =========================================================
    WHAT YOU CAN EXPECT
 ========================================================= */
-
 .experience-section {
     padding: 72px 0 82px;
 }
-
 .experience-header {
     text-align: center;
     margin-bottom: 48px;
 }
-
 .experience-header .section-heading {
     margin-top: 17px;
 }
-
 .experience-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 18px;
 }
 
-
-/* =========================================================
-   EXPERIENCE CARD
-========================================================= */
-
+/*  EXPERIENCE CARD */
 .experience-card {
     min-height: 205px;
     padding: 23px 22px;
-
     border: 1px solid var(--color-border);
     border-radius: 13px;
-
     background: #020910;
-
     transition:
         transform var(--transition-normal),
         border-color var(--transition-normal),
         background var(--transition-normal);
 }
-
 .experience-card:hover {
     transform: translateY(-4px);
-
     border-color: rgba(144, 105, 236, 0.5);
-
     background: #030d18;
 }
-
 
 /* =========================================================
    ICON
 ========================================================= */
-
 .experience-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-
     width: 48px;
     height: 48px;
-
     margin-bottom: 18px;
-
     border: 1px solid rgba(26, 238, 215, 0.25);
     border-radius: 8px;
-
     background: rgba(26, 238, 215, 0.035);
-
     color: var(--color-cyan);
 }
 .experience-icon img {
@@ -392,73 +371,51 @@
     height: 25px;
 }
 
-
-/* =========================================================
-   CARD CONTENT
-========================================================= */
-
+/* CARD CONTENT */
 .experience-card h3 {
     color: var(--color-white);
-
     font-size: 18px;
     font-weight: 600;
     line-height: 1.4;
 }
-
 .experience-card p {
     margin-top: 8px;
-
     color: var(--color-text-secondary);
-
     font-size: 14px;
     font-weight: 400;
     line-height: 1.65;
 }
 
-
-/* =========================================================
-   RESPONSIVE
-========================================================= */
-
+/*  RESPONSIVE  */
 @media (max-width: 992px) {
-
     .experience-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
-
 @media (max-width: 767px) {
-
     .experience-section {
         padding: 65px 0 70px;
     }
-
     .experience-header {
         margin-bottom: 35px;
     }
-
     .experience-grid {
         gap: 14px;
     }
-
     .experience-card {
         min-height: 190px;
         padding: 20px 18px;
     }
 }
 
-
 @media (max-width: 480px) {
-
     .experience-section {
         padding: 55px 0 60px;
     }
-
     .experience-grid {
         grid-template-columns: 1fr;
     }
-
     .experience-card {
         min-height: auto;
     }
