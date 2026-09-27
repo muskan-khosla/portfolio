@@ -921,3 +921,344 @@
         font-size: 14px;
     }
 }
+
+
+
+
+
+/* =========================================================
+   GLOBAL PAGE HERO
+========================================================= */
+
+.page-hero {
+    position: relative;
+    padding: 42px 0 48px;
+    background: var(--color-bg-primary);
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   BACKGROUND GLOWS
+========================================================= */
+
+.page-hero-glow {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    filter: blur(100px);
+    pointer-events: none;
+}
+
+.page-hero-glow-left {
+    left: -130px;
+    top: 45px;
+    background: rgba(116, 62, 235, 0.14);
+}
+
+.page-hero-glow-right {
+    right: -120px;
+    top: 20px;
+    background: rgba(26, 238, 215, 0.10);
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.page-hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 680px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   HANDWRITTEN TEXT
+========================================================= */
+
+.page-hero-script {
+    display: inline-block;
+
+    color: var(--color-white);
+
+    font-family: "Caveat", cursive;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1;
+
+    transform: rotate(-4deg);
+}
+
+.page-hero-script::after {
+    content: "";
+
+    display: block;
+
+    width: 55px;
+    height: 1px;
+
+    margin: 4px auto 0;
+
+    background: var(--gradient-primary);
+
+    transform: rotate(-3deg);
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.page-hero-title {
+    margin-top: 13px;
+
+    color: var(--color-white);
+
+    font-size: clamp(36px, 4vw, 46px);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -1px;
+}
+
+
+/* =========================================================
+   ROLE
+========================================================= */
+
+.page-hero-role {
+    margin-top: 7px;
+
+    color: var(--color-white);
+
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.page-hero-description {
+    max-width: 600px;
+
+    margin: 10px auto 0;
+
+    color: var(--color-text-secondary);
+
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.page-hero-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    margin-top: 17px;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.page-hero-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+    min-height: 34px;
+    padding: 0 15px;
+
+    border-radius: var(--radius-pill);
+
+    font-size: 9px;
+    font-weight: 600;
+
+    transition:
+        transform var(--transition-normal),
+        box-shadow var(--transition-normal);
+}
+
+.page-hero-button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* Primary */
+
+.page-hero-button-primary {
+    color: var(--color-white);
+    background: var(--gradient-primary);
+
+    box-shadow:
+        0 7px 20px rgba(144, 105, 236, 0.18);
+}
+
+.page-hero-button-primary:hover {
+    box-shadow:
+        0 10px 25px rgba(144, 105, 236, 0.3);
+}
+
+
+/* Outline */
+
+.page-hero-button-outline {
+    position: relative;
+
+    color: var(--color-white);
+    background: transparent;
+
+    isolation: isolate;
+}
+
+.page-hero-button-outline::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    padding: 1px;
+
+    border-radius: inherit;
+
+    background: var(--gradient-primary);
+
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+
+    mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   SOCIALS
+========================================================= */
+
+.page-hero-socials {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+    margin-left: 4px;
+}
+
+.page-hero-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 22px;
+    height: 22px;
+
+    color: var(--color-text-secondary);
+
+    transition:
+        color var(--transition-fast),
+        transform var(--transition-fast);
+}
+
+.page-hero-social svg {
+    width: 12px;
+    height: 12px;
+
+    fill: currentColor;
+}
+
+.page-hero-social:hover {
+    color: var(--color-cyan);
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .page-hero {
+        padding: 38px 0 42px;
+    }
+
+    .page-hero-content {
+        max-width: 600px;
+    }
+
+    .page-hero-title {
+        font-size: 38px;
+    }
+
+    .page-hero-description {
+        max-width: 520px;
+        font-size: 11px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .page-hero {
+        padding: 32px 0 38px;
+    }
+
+    .page-hero-script {
+        font-size: 16px;
+    }
+
+    .page-hero-title {
+        margin-top: 11px;
+        font-size: 31px;
+        letter-spacing: -0.7px;
+    }
+
+    .page-hero-role {
+        font-size: 10px;
+    }
+
+    .page-hero-description {
+        font-size: 10px;
+        line-height: 1.7;
+    }
+
+    .page-hero-actions {
+        flex-wrap: wrap;
+        gap: 9px;
+    }
+
+    .page-hero-button {
+        min-height: 34px;
+        padding-inline: 14px;
+    }
+
+    .page-hero-socials {
+        width: 100%;
+        justify-content: center;
+        margin: 2px 0 0;
+    }
+}
