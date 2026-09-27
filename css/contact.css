@@ -187,7 +187,7 @@
     display: flex;
     align-items: flex-start;
     gap: 14px;
-    min-height: 74px;
+    min-height: 125px;
     padding: 14px 17px;
     border: 1px solid var(--color-border);
     border-radius: 13px;
@@ -197,6 +197,7 @@
         transform var(--transition-normal),
         background var(--transition-normal);
     flex-direction: column;
+    justify-content: center;
 }
 .contact-info-card:hover {
     border-color: rgba(144, 105, 236, 0.5);
