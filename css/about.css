@@ -541,6 +541,12 @@
     -webkit-text-fill-color: transparent;
     color: transparent;
 }
+.approach-step-number img {
+    width: 55px;
+    position: absolute;
+    top: -11px;
+    left: -22px;
+}
 
 /*   STEP TITLE */
 .approach-step h3 {
