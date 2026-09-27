@@ -3,7 +3,7 @@
 ========================================================= */
 .my-story-section {
     position: relative;
-    padding: 10px 0;
+    padding: 100px 0;
     background: var(--color-bg-secondary);
     overflow: hidden;
 }
