@@ -1,0 +1,367 @@
+/* =========================================
+   ABOUT HERO
+========================================= */
+
+.about-hero-section {
+    position: relative;
+
+    padding: 42px 0 48px;
+
+    background: var(--color-bg-primary);
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   BACKGROUND GLOWS
+========================================= */
+
+.about-hero-glow {
+    position: absolute;
+
+    width: 280px;
+    height: 280px;
+
+    border-radius: 50%;
+
+    filter: blur(100px);
+
+    pointer-events: none;
+}
+
+.about-hero-glow-left {
+    left: -130px;
+    top: 45px;
+
+    background: rgba(116, 62, 235, 0.14);
+}
+
+.about-hero-glow-right {
+    right: -120px;
+    top: 20px;
+
+    background: rgba(26, 238, 215, 0.10);
+}
+
+
+/* =========================================
+   HERO CONTENT
+========================================= */
+
+.about-hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 680px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+/* =========================================
+   HANDWRITTEN INTRO
+========================================= */
+
+.about-hero-script {
+    display: inline-block;
+
+    color: var(--color-white);
+
+    font-family: "Caveat", cursive;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1;
+
+    transform: rotate(-4deg);
+}
+
+.about-hero-script::after {
+    content: "";
+
+    display: block;
+
+    width: 55px;
+    height: 1px;
+
+    margin: 4px auto 0;
+
+    background: var(--gradient-primary);
+
+    transform: rotate(-3deg);
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.about-hero-title {
+    margin-top: 13px;
+
+    color: var(--color-white);
+
+    font-size: clamp(36px, 4vw, 46px);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -1px;
+}
+
+.about-hero-title .gradient-text {
+    display: inline;
+}
+
+
+/* =========================================
+   ROLE
+========================================= */
+
+.about-hero-role {
+    margin-top: 7px;
+
+    color: var(--color-white);
+
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.about-hero-description {
+    max-width: 600px;
+
+    margin: 10px auto 0;
+
+    color: var(--color-text-secondary);
+
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+
+/* =========================================
+   ACTIONS
+========================================= */
+
+.about-hero-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    margin-top: 17px;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.about-hero-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+    min-height: 34px;
+
+    padding: 0 15px;
+
+    border-radius: var(--radius-pill);
+
+    font-size: 9px;
+    font-weight: 600;
+
+    transition:
+        transform var(--transition-normal),
+        box-shadow var(--transition-normal);
+}
+
+.about-hero-button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* PRIMARY */
+
+.about-hero-button-primary {
+    color: var(--color-white);
+
+    background: var(--gradient-primary);
+
+    box-shadow:
+        0 7px 20px rgba(144, 105, 236, 0.18);
+}
+
+.about-hero-button-primary:hover {
+    box-shadow:
+        0 10px 25px rgba(144, 105, 236, 0.3);
+}
+
+.about-hero-button-primary span {
+    font-size: 12px;
+}
+
+
+/* OUTLINE */
+
+.about-hero-button-outline {
+    position: relative;
+
+    color: var(--color-white);
+
+    background: transparent;
+
+    isolation: isolate;
+}
+
+.about-hero-button-outline::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    padding: 1px;
+
+    border-radius: inherit;
+
+    background: var(--gradient-primary);
+
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+
+    mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+
+    pointer-events: none;
+}
+
+.about-hero-button-outline > span {
+    font-size: 12px;
+}
+
+
+/* =========================================
+   SOCIAL ICONS
+========================================= */
+
+.about-hero-socials {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+    margin-left: 4px;
+}
+
+.about-hero-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 22px;
+    height: 22px;
+
+    color: var(--color-text-secondary);
+
+    transition:
+        color var(--transition-fast),
+        transform var(--transition-fast);
+}
+
+.about-hero-social svg {
+    width: 12px;
+    height: 12px;
+
+    fill: currentColor;
+}
+
+.about-hero-social:hover {
+    color: var(--color-cyan);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 767px) {
+
+    .about-hero-section {
+        padding: 38px 0 42px;
+    }
+
+    .about-hero-content {
+        max-width: 600px;
+    }
+
+    .about-hero-title {
+        font-size: 38px;
+    }
+
+    .about-hero-description {
+        max-width: 520px;
+        font-size: 11px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .about-hero-section {
+        padding: 32px 0 38px;
+    }
+
+    .about-hero-script {
+        font-size: 16px;
+    }
+
+    .about-hero-title {
+        margin-top: 11px;
+
+        font-size: 31px;
+        letter-spacing: -0.7px;
+    }
+
+    .about-hero-role {
+        font-size: 10px;
+    }
+
+    .about-hero-description {
+        font-size: 10px;
+        line-height: 1.7;
+    }
+
+    .about-hero-actions {
+        flex-wrap: wrap;
+        gap: 9px;
+    }
+
+    .about-hero-button {
+        min-height: 34px;
+        padding-inline: 14px;
+    }
+
+    .about-hero-socials {
+        width: 100%;
+        justify-content: center;
+        margin: 2px 0 0;
+    }
+}
