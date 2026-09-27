@@ -387,17 +387,9 @@
 
     color: var(--color-cyan);
 }
-
-.experience-icon svg {
-    width: 18px;
-    height: 18px;
-
-    fill: currentColor;
-}
-
-.experience-icon svg path[fill="none"],
-.experience-icon svg path[stroke="currentColor"] {
-    fill: none;
+.experience-icon img {
+    width: 25px;
+    height: 25px;
 }
 
 
