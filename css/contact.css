@@ -729,131 +729,93 @@
     background: transparent;
     isolation: isolate;
 }
-
 .thankyou-secondary-button::before {
     content: "";
-
     position: absolute;
-
     inset: 0;
-
     padding: 1px;
-
     border-radius: inherit;
-
     background:
         var(--gradient-primary);
-
     -webkit-mask:
         linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
-
     mask:
         linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
-
     -webkit-mask-composite: xor;
     mask-composite: exclude;
-
     pointer-events: none;
 }
-
 .thankyou-secondary-button:hover {
     background: rgba(144, 105, 236, 0.08);
 }
 
-
 /* =========================================================
    NOTE
 ========================================================= */
-
 .thankyou-note {
     margin-top: 30px;
-
     color: rgba(255, 255, 255, 0.38);
-
     font-family: "Caveat", cursive;
-
     font-size: 18px;
     font-weight: 500;
-
     transform: rotate(-2deg);
 }
-
 
 /* =========================================================
    RESPONSIVE
 ========================================================= */
-
 @media (max-width: 767px) {
-
     .thankyou-page {
         padding: 30px 20px;
     }
-
     .thankyou-card {
         padding: 45px 30px;
     }
-
     .thankyou-title {
         font-size: 38px;
     }
-
     .thankyou-description {
-        font-size: 13px;
+        font-size: 14px;
     }
-
 }
 
-
 @media (max-width: 480px) {
-
     .thankyou-page {
         padding: 20px 16px;
     }
-
     .thankyou-card {
         padding: 38px 20px;
         border-radius: 18px;
     }
-
     .thankyou-icon {
         width: 62px;
         height: 62px;
     }
-
     .thankyou-icon svg {
         width: 27px;
         height: 27px;
     }
-
     .thankyou-title {
         margin-top: 18px;
-
         font-size: 31px;
         letter-spacing: -0.8px;
     }
-
     .thankyou-description {
         margin-top: 15px;
-
-        font-size: 12px;
+        font-size: 14px;
         line-height: 1.7;
     }
-
     .thankyou-actions {
         flex-direction: column;
-
         width: 100%;
-
         margin-top: 26px;
     }
-
     .thankyou-primary-button,
     .thankyou-secondary-button {
         width: 100%;
     }
-
     .thankyou-note {
         margin-top: 25px;
         font-size: 17px;
