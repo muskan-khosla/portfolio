@@ -1067,86 +1067,8 @@
 }
 
 
-/* =========================================================
-   BUTTONS
-========================================================= */
-
-.page-hero-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 7px;
-
-    min-height: 34px;
-    padding: 0 15px;
-
-    border-radius: var(--radius-pill);
-
-    font-size: 9px;
-    font-weight: 600;
-
-    transition:
-        transform var(--transition-normal),
-        box-shadow var(--transition-normal);
-}
-
-.page-hero-button:hover {
-    transform: translateY(-2px);
-}
 
 
-/* Primary */
-
-.page-hero-button-primary {
-    color: var(--color-white);
-    background: var(--gradient-primary);
-
-    box-shadow:
-        0 7px 20px rgba(144, 105, 236, 0.18);
-}
-
-.page-hero-button-primary:hover {
-    box-shadow:
-        0 10px 25px rgba(144, 105, 236, 0.3);
-}
-
-
-/* Outline */
-
-.page-hero-button-outline {
-    position: relative;
-
-    color: var(--color-white);
-    background: transparent;
-
-    isolation: isolate;
-}
-
-.page-hero-button-outline::before {
-    content: "";
-
-    position: absolute;
-    inset: 0;
-
-    padding: 1px;
-
-    border-radius: inherit;
-
-    background: var(--gradient-primary);
-
-    -webkit-mask:
-        linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-
-    mask:
-        linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-
-    pointer-events: none;
-}
 
 
 /* =========================================================
@@ -1169,7 +1091,7 @@
     width: 22px;
     height: 22px;
 
-    color: var(--color-text-secondary);
+    color: var(--color-white);
 
     transition:
         color var(--transition-fast),
