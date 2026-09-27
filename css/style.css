@@ -1066,7 +1066,9 @@
     margin-top: 17px;
 }
 
-
+a.page-hero-button.page-hero-button-outline {
+    margin: 0;
+}
 
 
 
