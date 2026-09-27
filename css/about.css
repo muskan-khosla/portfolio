@@ -591,22 +591,19 @@
     .my-approach-section {
         padding: 75px 0 80px;
     }
-    .my-approach-section .section-heading {
-        font-size: 43px;
-    }
     .approach-steps {
         gap: 12px;
         margin-top: 50px;
     }
     .approach-step-number {
-        font-size: 28px;
+        font-size: 55px;
     }
     .approach-step h3 {
-        font-size: 13px;
+        font-size: 20px;
     }
     .approach-step p {
         max-width: 150px;
-        font-size: 9px;
+        font-size: 14px;
     }
     .approach-arrow {
         margin-top: 5px;
@@ -618,10 +615,6 @@
     .my-approach-section {
         padding: 70px 0;
     }
-    .my-approach-section .section-heading {
-        font-size: 34px;
-        letter-spacing: -1px;
-    }
     .approach-steps {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -632,15 +625,15 @@
         display: none;
     }
     .approach-step-number {
-        font-size: 29px;
+        font-size: 50px;
     }
     .approach-step h3 {
         margin-top: 18px;
-        font-size: 14px;
+        font-size: 20px;
     }
     .approach-step p {
         max-width: 220px;
-        font-size: 10px;
+        font-size: 14px;
     }
 }
 
@@ -649,20 +642,10 @@
     .my-approach-section {
         padding: 60px 0;
     }
-    .my-approach-section .section-heading {
-        font-size: 30px;
-    }
+    
     .approach-steps {
         gap: 40px 15px;
+        grid-template-columns: 1fr;
     }
-    .approach-step-number {
-        font-size: 27px;
-    }
-    .approach-step h3 {
-        font-size: 13px;
-    }
-    .approach-step p {
-        font-size: 9px;
-        line-height: 1.65;
-    }
+
 }
