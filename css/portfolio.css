@@ -252,7 +252,9 @@
         padding: 13px;
     }
 
- 
+ .portfolio-project-browser {
+        --project-preview-height: 280px;
+    }
 
     .portfolio-project-content {
         padding: 22px 20px 24px;
@@ -272,6 +274,9 @@
 
     .portfolio-project-description {
         font-size: 10px;
+    }
+    .portfolio-project-browser {
+        --project-preview-height: 240px;
     }
 
     .portfolio-project-actions {
