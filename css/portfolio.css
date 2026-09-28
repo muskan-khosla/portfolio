@@ -72,18 +72,38 @@
 }
 
 .portfolio-project-browser {
+    --project-preview-height: 320px;
+
+    position: relative;
+    height: var(--project-preview-height);
     overflow: hidden;
+
     border: 1px solid rgba(71, 117, 168, 0.32);
     border-radius: 10px;
+
     background: #020910;
+
     box-shadow:
         0 15px 35px rgba(0, 0, 0, 0.22);
 }
+
 .portfolio-project-browser img {
-    height: 300px;
+    display: block;
     width: 100%;
-    object-fit: cover;
-    object-position: top;
+    height: auto;
+    max-width: none;
+
+    transform: translateY(0);
+
+    transition:
+        transform 8.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-project-card:hover
+.portfolio-project-browser img {
+    transform: translateY(
+        calc(-100% + var(--project-preview-height))
+    );
 }
 
 
