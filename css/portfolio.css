@@ -268,13 +268,6 @@
     }
 
 
-    .portfolio-project-title {
-        font-size: 19px;
-    }
-
-    .portfolio-project-description {
-        font-size: 10px;
-    }
     .portfolio-project-browser {
         --project-preview-height: 240px;
     }
