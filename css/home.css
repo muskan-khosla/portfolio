@@ -232,7 +232,7 @@ a.hero-button.border-btn {
 
 
 /*  MOBILE */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .hero-section {
         padding: 55px 0 30px;
     }
@@ -442,7 +442,7 @@ a.hero-button.border-btn {
 }
 
 /* RESPONSIVE — MOBILE */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .services-section {
         padding: 70px 0;
     }
@@ -604,7 +604,7 @@ a.hero-button.border-btn {
         min-height: 105px;
     }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .toolkit-section {
         padding: 70px 0;
     }
@@ -955,7 +955,7 @@ span.project-category {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .about-me-section {
         padding: 55px 0 60px;
     }

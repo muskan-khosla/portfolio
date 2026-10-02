@@ -363,7 +363,7 @@ ol {
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     :root {
         --container-padding: 20px;
     }
@@ -391,5 +391,9 @@ ol {
     }
     .section-heading {
         font-size: 32px;
+    }
+    .btn,
+    .gradient-button {
+        width: 100%;
     }
 }

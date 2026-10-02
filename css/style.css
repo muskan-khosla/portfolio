@@ -335,6 +335,10 @@
     .header-inner {
         min-height: 70px;
     }
+    .section-badge {
+        white-space: wrap;
+        line-height: 20px;
+    }
     .main-navigation {
         position: absolute;
         top: 100%;
@@ -718,7 +722,7 @@
 }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .cta-section {
         padding: 50px 0;
     }
@@ -1063,7 +1067,7 @@ a.page-hero-button.page-hero-button-outline {
 
 
 /* RESPONSIVE */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .page-hero {
         padding: 50px 0;
     }

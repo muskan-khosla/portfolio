@@ -270,7 +270,7 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .contact-form-section {
         padding: 20px 0 70px;
     }
@@ -393,7 +393,7 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .experience-section {
         padding: 65px 0 70px;
     }
@@ -522,7 +522,7 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .connect-section {
         padding: 65px 0 75px;
     }

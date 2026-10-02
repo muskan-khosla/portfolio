@@ -54,7 +54,7 @@
 
 
 /*  MOBILE  */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .my-story-section {
         padding: 65px 0;
     }
@@ -266,7 +266,7 @@
    MOBILE
 ========================================================= */
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
     .what-i-know-section {
         padding: 70px 0;
@@ -447,7 +447,7 @@
         min-height: 105px;
     }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .toolkit-section {
         padding: 70px 0;
     }
@@ -610,7 +610,7 @@
 }
 
 /*  MOBILE  */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .my-approach-section {
         padding: 70px 0;
     }

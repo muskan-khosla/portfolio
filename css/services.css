@@ -107,7 +107,7 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .services-section {
         padding: 60px 0 65px;
     }
@@ -259,7 +259,7 @@
 }
 
 /*  MOBILE  */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .my-approach-section {
         padding: 70px 0;
     }
